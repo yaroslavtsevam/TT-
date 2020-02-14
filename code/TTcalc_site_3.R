@@ -881,7 +881,7 @@ TTcalc_site = function(server,
 
 
   SITE_list = suppressWarnings(suppressMessages(
-    read_delim(descr_file,col_names = T, delim=";")))
+    read_delim(descr_file,col_names = T, delim=",")))
   if (!is.null(sitename)){
     SITE_list = SITE_list%>%filter(Site == sitename) 
     if(SITE_list %>% length <1) {

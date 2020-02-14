@@ -35,7 +35,7 @@ TIMdata=TTcalc_site(c("http://naturetalkers.altervista.org/C18A0029/ttcloud.txt"
                     import_folder_name = "data/backup/TIMR",
                     first_imported_dates_reconstructed = T,
                     "data/full_TT_desc.csv",
-                    "Timiryazev")
+                    "TIMIRYAZEV")
 
 
 BLTNdata=TTcalc_site("http://naturetalkers.altervista.org/C18A0024/ttcloud.txt",
@@ -43,28 +43,28 @@ BLTNdata=TTcalc_site("http://naturetalkers.altervista.org/C18A0024/ttcloud.txt",
                      import_folder_name = NULL,
                      first_imported_dates_reconstructed = F,
                      "data/full_TT_desc.csv",
-                     "Bolotnaya")
+                     "BOLOTNAYA")
 
 SCHLdata=TTcalc_site("http://naturetalkers.altervista.org/C18A0023/ttcloud.txt",
                      installation_start,
                      import_folder_name = NULL,
                      first_imported_dates_reconstructed = F,
                      "data/full_TT_desc.csv",
-                     "School")
+                     "SCHOOL1234")
 
 SHERdata=TTcalc_site("http://naturetalkers.altervista.org/C1870015/ttcloud.txt",
                      installation_start,
                      import_folder_name = NULL,
                      first_imported_dates_reconstructed = F,
                      "data/full_TT_desc.csv",
-                     "Scherbinka")
+                     "SCHERBINKA")
 
-HORTdata  = TTcalc_site("http://naturetalkers.altervista.org/C18A0026/ttcloud.txt",
+GRDNTdata  = TTcalc_site("http://naturetalkers.altervista.org/C18A0026/ttcloud.txt",
                         installation_start,
                         import_folder_name = NULL,
                         first_imported_dates_reconstructed = F,
                         "data/full_TT_desc.csv",
-                        "Botanical")
+                        "GARDEN")
 
 
 
@@ -73,7 +73,37 @@ TRSKdata = TTcalc_site("http://naturetalkers.altervista.org/C18A0027/ttcloud.txt
                        import_folder_name = NULL,
                        first_imported_dates_reconstructed = F,
                        "data/full_TT_desc.csv",
-                       "Troick")
+                       "TROITSK")
+
+AllData = rbind(
+  RUDNdata[[2]],
+  TIMdata[[2]],
+  BLTNdata[[2]],
+  GRDNdata[[2]],
+  TRSKdata[[2]],
+  SCHLdata[[2]],
+  SHERdata[[2]]
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
