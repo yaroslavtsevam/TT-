@@ -1,131 +1,4 @@
-##
-#1. I agree that DB is not readable. Alex, please make it in xlsx and add the description of the condition (as in Table 1)
-
-# Кроме того, база должна быть понятной – с разбивкой по датчикам, сгруппированным по интенсивности 
-# антропогенной нагрузки с кратким описанием, где установлен и пр., с понятными названиями параметров и в 
-# формате xlsx (п. 8.3 ТЗ).
-# 
- 
-#2. Alex, please edit the graphs regarding language (Russian) and readability.
-# I can add to the comment from the reviewer that they should be much brighter - so far some lines (like SD of 
-# oscillation) are almost invisible. 
-# 
-# Let's add more graphs comparing the dynamics between different ages and anthropogenic pressures. 
-# For the pressures, we assume that Sherbinka is high, Troitsk is low; Bolotnaya is high;
-#  Timiryazev is low. Botanical garden and school can be interpreted differently.
-#   For Timiryazev we can compare different ages and different distances from the road - it was assumed when we 
-#   were planning the research site.
-#
-# Графики. Добавить ед. измерения параметров. Указать месяц и декады, а не количество дней, а в графиках, где только месяцы, указать название месяца, 
-# а не цифру. Это замечание ко всем графикам.
-#3.	Также не могу найти графики, отражающие динамику отдельных параметров а) в разных возрастных группах и б) 
-#с учетом антропогенной нагрузки.
-#
-##4. We can mention that we didn't do the dendrochronological analysis, but approximate ages based on the diameter and species are needed.
-#
-# Было бы хорошо добавить в данные по деревьям (п. 1.3 отчета) их возраст
-##
-#5. Olga, please add Russian names for all the species all over the report (but tables for VTA) in brackets after Latin name.
-#
-#5.	Просьба в отчете использовать не латинские, а русские названия пород деревьев. Информация должна быть понятной 
-#не только профильным специалистам, латинские наименования будут затруднять восприятие информации
-#
-#6. Alex, please describe the SD of oscillations in details and explain, why it is better than the other parameters you tried.
-#
-#	Вопрос по показателю вертикальной устойчивости. «В качестве индикатора колебаний была предложена безразмерная 
-#	величина – сумма стандартных отклонений сигнала по осям». Просьба более подробно описать этот индикатор, как он 
-#	рассчитывается, и как его интерпретировать.
-#	
-#	
-#7. It kind of duplicates the final table but without literature data.  However, let's do that if required. 
-# Giovanna, please take care of it.
-#
-#В Главе 2 было бы хорошо добавить сводные таблицы параметров для разных видов лиственных и хвойных пород 
-#(без разбивки по площадкам), по аналогии с Главой 3
-#
-#8. Alex, Riccardo, please explain.
-#
-#С. 30. Почему у ели такие сильные «скачки» NDVI? Порядка 0,25. Разница в 0,1-0,15 ед. – это уже переход из 
-#одного класса качественного состояния в другой, либо отражение сезонной динамики, чего у хвойных быть не должно. 
-#
-#
-
-#9. There was a description of PRI - I can add it. However, the question of why we write about PRI in Chapter 4 
-#and about NDVI elsewhere is relevant. Please respond or more likely repeat the PRI for the other chapters and NDVI 
-#for Chapter 4. Giovana, Alex, this is the task for you, I guess.
-#
-#9.	В отчете отсутствует анализ индекса PRI. Но он появляется в конце раздела 4.1 
-# как один из критериев верификации. Почему такая логика изложения? 
-#
-#10. This is an expected question. The easy option - to compare sites as described in p.3. More difficult - 
-#to evaluate the distance from the road or from the other sources of anthropogenic pressure per site. 
-#The best option is to write a separate chapter comparing anthropogenic pressure similarly like we did with age 
-#in Chapter 3 and species in Chapter 2. If you provide graphs and short descriptions I can take care of it.
-#
-#10.	В отчете отсутствует раздел по сравнительному анализу пространственного разнообразия суточной и сезонной 
-#динамики параметров состояния на площадках с разной антропогенной нагрузкой
-#
-#
-#11. Olga, please respond. If your criteria are different from GR-743 we'll have to recalculate the VTA results 
-#based on it. The municipality has developed this regulation and they will insist on using it.
-#
-#11.	Глава 4, раздел 4.1. Нужно указать, откуда взяты градации параметров, по которым оценивалось визуальное 
-#состояние. В 822-ПП есть градации по усыхающим ветвям, но они отличаются, от приведенных в отчете. Также 
-#целесообразно было бы оценить категорию состояния деревьев по шкале, утвержденной 743-ПП. Если проводится 
-#оценка по европейским критериям, необходимо эту классификацию включить в отчет в виде приложения, описать 
-#как рассчитывается класс. И сопоставить с нашими критериями из 822-ПП.
-#
-#12. I propose to implement the T-criteria for all the trees and check whether the categories A and С are 
-#significantly different. We can also use one-way ANOVA to do the same with Russian grade (Olga, once again, 
-#please, use the  classification from GR-744)
-#
-#12.	Раздел 4.1. Верификация по 12 деревьям – это очень мало, не репрезентативно. Можно ли дополнить?
-# По индексу PRI вопрос выше, почему он выбран для верификации, а не NDVI? Как этот индекс интерпретируется, 
-# есть ли классификация?
-#
-
-#
-#
-#13. Alex (Giovanna) please comment.
-#
-#
-#13.	Раздел 4.2. Очень странные получились значения NDVI, и по датчикам, и по спутникам. По имеющимся у 
-#нас классификациям, составленным, специализированными организациями, значения NDVI < 0,55 – это сильное усыхание. 
-#У Вас много таких низких значений индекса. Кроме того, если сопоставить эти результаты с натурными обследованиями, 
-#то очень низкие значения NDVI выскакивают у деревьев в хорошем состоянии, например устройства 259, 263, 279, хотя 
-#с такими значениями NDVI – это должны быть сухостойные деревья. Прошу дать комментарий. При этом, в таблице 41 
-#приведены совершенно адекватные значения индекса.
-#
-#
-#
-#14. We shall add not only optimal, but also extreme values for sapflow and vegetation indexes (NDVI and PRI?) 
-#considering age. Basically, for each species we shall add the value for young and old. I can understand that we'll
-# likely lack literature data on these details, but we'll have to make a good guess in this case. Riccardo, Giovanna,
-#  please take care of this issue. I guess, it is the most important point. 
-#  
-#14.	В конце отчета приведены только оптимальные значения 2х параметров, тогда так требованиями ТЗ предусмотрена 
-#подготовка предложений по оптимальным и экстремальным значениям, в том числе с учетом возраста. Прошу доработать  
-#  
-#  
-#  Таблицы среднихз макс мин значений потока, ндви, для каждого вида усредненный
-#  
-#  !!!!Посчитать возраста по феногруппам!!!!!! Добавить колонку в первую главу
-#  
-#  NDVI глава 2 добавить таблицу
-#  
-#  Расписать кто высокий кто низкий
-#  
-#  Ответить на TT 259, 263, 279
-#  
-#  Имена участков
-#  
-#  Показать что NDVI работает для ВТА и валить на то, что 
-#  
-#  Внутри сайтовое сравнение антроп нагрузке
-#  
-#  DONE Ольгу пнуть по ее пунктам
-#  
-#  Добавить в финальные таблицы наши экстремальные значения 
+# TODO Fix the code, so all the hacks in the code will be in correct all_data_csv
 #  
 
 
@@ -137,7 +10,8 @@
 
 
 
-source("CalcFin\\TTcalc_site_3.R")
+source("code//TTcalc_site_3.R")
+
 library(ggpmisc)
 library(extrafont)
 library(Rmisc)
@@ -160,9 +34,9 @@ export_site_to_excel(OLDTIM,sitename="TIMACAD_old",
 RUDNdata=TTcalc_site(c("http://naturetalkers.altervista.org/C18A0031/ttcloud.txt",
                        "http://naturetalkers.altervista.org/C18A0025/ttcloud.txt"),
                      installation_start,
-                     import_folder_name="RUDN",
+                     import_folder_name="data//backup//RUDN//",
                      first_imported_dates_reconstructed = F,
-                     "all_TT_desc.csv",
+                     "data//all_TT_desc.csv",
                      "RUDN")
 
 TIMdata[[2]] %>% group_by(id)%>% summarise(problems = which(is.na(time))%>%length) %>% as.data.frame
@@ -176,9 +50,9 @@ export_site_to_excel(RUDNdata,sitename="RUDN_all",
 TIMdata=TTcalc_site(c("http://naturetalkers.altervista.org/C18A0029/ttcloud.txt",
                       "http://naturetalkers.altervista.org/C18A0030/ttcloud.txt"),
                     installation_start,
-                    import_folder_name="TIMR",
+                    import_folder_name="data//backup//TIMR",
                     first_imported_dates_reconstructed = T,
-                    "all_TT_desc.csv",
+                    "data//all_TT_desc.csv",
                     "Timiryazev")
 
 export_site_to_excel(TIMdata,sitename="TIMR_all",
@@ -189,7 +63,7 @@ BLTNdata=TTcalc_site("http://naturetalkers.altervista.org/C18A0024/ttcloud.txt",
                      installation_start,
                      import_folder_name=NULL,
                      first_imported_dates_reconstructed = F,
-                     "all_TT_desc.csv",
+                     "data//all_TT_desc.csv",
                      "Bolotnaya")
 
 export_site_to_excel(BLTNdata,sitename="Bolotnaya_all",
@@ -201,7 +75,7 @@ SCHLdata=TTcalc_site("http://naturetalkers.altervista.org/C18A0023/ttcloud.txt",
                      installation_start,
                      import_folder_name=NULL,
                      first_imported_dates_reconstructed = F,
-                     "all_TT_desc.csv",
+                     "data//all_TT_desc.csv",
                      "School")
 SCHLdata[[2]] %>% group_by(id) %>% filter(moist>0)%>% 
   summarise(mmoist = mean(moist, na.rm=T), msd = sd(moist, na.rm=T))
@@ -215,7 +89,7 @@ SHERdata=TTcalc_site("http://naturetalkers.altervista.org/C1870015/ttcloud.txt",
                      installation_start,
                      import_folder_name=NULL,
                      first_imported_dates_reconstructed = F,
-                     "all_TT_desc.csv",
+                     "data//all_TT_desc.csv",
                      "Scherbinka")
 
 export_site_to_excel(SHERdata,sitename="Scherbinka_all",
@@ -226,7 +100,7 @@ HORTdata  = TTcalc_site("http://naturetalkers.altervista.org/C18A0026/ttcloud.tx
                         installation_start,
                         import_folder_name=NULL,
                         first_imported_dates_reconstructed = F,
-                        "all_TT_desc.csv",
+                        "data//all_TT_desc.csv",
                         "Botanical")
 
 export_site_to_excel(HORTdata,sitename="Botanical_all",
@@ -237,7 +111,7 @@ TRSKdata = TTcalc_site("http://naturetalkers.altervista.org/C18A0027/ttcloud.txt
                        installation_start,
                        import_folder_name = NULL,
                        first_imported_dates_reconstructed = F,
-                       "all_TT_desc.csv",
+                       "data//all_TT_desc.csv",
                        "Troick")
 
 export_site_to_excel(TRSKdata,sitename="Troitsk_all",
@@ -286,6 +160,12 @@ AllData = rbind(
   SHERdata[[2]]
 )
 
+
+#AllData = rbind(
+#  TRSKdata[[2]]
+#)
+
+
 AllData$month = month(AllData$time)
 
 
@@ -298,8 +178,15 @@ AllDataRaw = rbind(
   SCHLdata[[1]],
   SHERdata[[1]]
 )
-write.csv(AllData,"all_data.csv")
-write.csv(AllDataRaw,"all_data_raw.csv")
+
+
+AllDataRaw = rbind(
+  TRSKdata[[1]]
+)
+
+
+write.csv(AllData,"results//all_data.csv")
+write.csv(AllDataRaw,"results//all_data_raw.csv")
 
 
 
@@ -359,7 +246,7 @@ read_meteo = function(folder){
 }  
 
 
-meteo_data  = read_meteo("MSU") %>% group_by(year,doy,hour)%>%
+meteo_data  = read_meteo("data//meteo//MSU") %>% group_by(year,doy,hour)%>%
   summarise(Rh = mean(Rh, na.rm = T),ta = mean(ta, na.rm = T), WS=mean(WS, na.rm = T))
 #meteo_data$doy %>% max
 #data = RUDNdata[[2]]
@@ -510,7 +397,7 @@ AllDataSummary= AllData %>% group_by(SiteIndex, Species,age_group_index,load,ins
   summarise(d = mean(diam),DBH = mean(DBH),DTT = mean(DTT), height = mean(height), VTA = mean(VTAscore))
 
 
-write.csv(AllDataSummary, file="DB_description.csv")
+write.csv(AllDataSummary, file="results//DB_description.csv")
 
 #AllData2 = AllData2%>%group_by(id)%>%mutate(growth =first(dist_pred)-dist_pred)
 
@@ -542,7 +429,7 @@ writeFluxTSALg = function(AllData){
       )
     
     for(i in 1:nrow(plotbunch)){
-      filename = paste("Load_anhtrop",plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
+      filename = paste("results//pictures//","Load_anhtrop",plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
       graph = plotbunch[i,2][[1]][[1]]
       ggsave(filename, graph,device = "png",width=8,height=6,units="in")
     } 
@@ -572,7 +459,7 @@ writeFluxTSALinSg = function(AllData){
     )
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste("Load_antr_in_site_",plotbunch[i,1],plotbunch[i,2],".png",sep="_")
+    filename = paste("results//pictures//", "Load_antr_in_site_",plotbunch[i,1],plotbunch[i,2],".png",sep="_")
     graph = plotbunch[i,3][[1]][[1]]
     ggsave(filename, graph,device = "png",width=8,height=6,units="in")
   } 
@@ -596,7 +483,7 @@ writeFluxTSg = function(data, sitename){
   
   #sitename = "RUDN"
   for(i in 1:nrow(plotbunch)){
-    filename = paste(sitename,plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
+    filename = paste("results//pictures//",sitename,plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
@@ -622,9 +509,9 @@ writeFluxTSTTg = function(data, sitename){
   
   #sitename = "RUDN"
   for(i in 1:nrow(plotbunch)){
-    filename = paste(sitename,plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
+    filename = paste("results//pictures//",sitename,plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
-    ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
+    ggsave( filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
 }
 
@@ -632,8 +519,8 @@ writeFluxTSTTg = function(data, sitename){
 #plotbunch[15,2][[1]]
 
 writeFluxDiurnalg = function(data, sitename){
-  months_n = factor(c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
-                    levels = c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
+  months_n = factor(c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
+                    levels = c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
   data = data%>%mutate(month = month(time))
   plotbunch = data%>%group_by(Species, hour, month,id) %>% filter(month<11 & month>4)%>%
     summarise(Flux = mean(Flux, na.rm=T)) %>% group_by(Species) %>% 
@@ -649,17 +536,17 @@ writeFluxDiurnalg = function(data, sitename){
   
   #sitename = "RUDN"
   for(i in 1:nrow(plotbunch)){
-    filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+    filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
-    ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
+    ggsave( filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
 }
 
 writeFluxDiurnalALg = function(AllData){
   
   
-  months_n = factor(c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
-                    levels = c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
+  months_n = factor(c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
+                    levels = c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
   
   AllData = AllData%>%mutate(month = month(time))
   plotbunch = AllData%>%group_by(load,Species, hour, month,id) %>% filter(month<11 & month>4)%>%
@@ -677,7 +564,7 @@ writeFluxDiurnalALg = function(AllData){
        +theme(legend.position="bottom"))
 
   for(i in 1:nrow(plotbunch)){
-    filename = paste("Load_anhtrop",plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
+    filename = paste("results//pictures//","Load_anhtrop",plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=8,height=6,units="in")
   } 
@@ -687,8 +574,8 @@ writeFluxDiurnalALg = function(AllData){
 writeFluxDiurnalALinSg = function(AllData){
   
   
-  months_n = factor(c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
-                    levels = c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
+  months_n = factor(c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
+                    levels = c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
   
   AllData = AllData%>%mutate(month = month(time))
   plotbunch = AllData%>%group_by(insite_load,Site,Species, hour, month,id) %>% filter(month<11 & month>4)%>%
@@ -706,15 +593,15 @@ writeFluxDiurnalALinSg = function(AllData){
        +theme(legend.position="bottom"))
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste("Load_anhtrop",plotbunch[i,1],plotbunch[i,2],".png",sep="_")
+    filename = paste("results//pictures//","Load_anhtrop",plotbunch[i,1],plotbunch[i,2],".png",sep="_")
     graph = plotbunch[i,3][[1]][[1]]
     ggsave(filename, graph,device = "png",width=8,height=6,units="in")
   } 
 }
 
 writeFluxDiurnalTTg = function(data, sitename){
-  months_n = factor(c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
-                    levels = c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
+  months_n = factor(c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
+                    levels = c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
   data = data%>%mutate(month = month(time))
   plotbunch = data%>%group_by(Species, hour, month,id) %>% filter(month<11 & month>4)%>%
      group_by(id) %>% mutate(months = months_n[month]) %>%
@@ -729,7 +616,7 @@ writeFluxDiurnalTTg = function(data, sitename){
   
   #sitename = "RUDN"
   for(i in 1:nrow(plotbunch)){
-    filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+    filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
@@ -756,7 +643,7 @@ writeNdviTSg = function(data, sitename){
   
   #sitename = "RUDN"
   for(i in 1:nrow(plotbunch)){
-    filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+    filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
@@ -781,7 +668,7 @@ writeNdviTSTTg = function(data, sitename){
   
   #sitename = "RUDN"
   for(i in 1:nrow(plotbunch)){
-    filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+    filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
@@ -810,7 +697,7 @@ writeNdviTSALg = function(data, sitename){
 
 
     for(i in 1:nrow(plotbunch)){
-      filename = paste("Load_anhtrop",plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
+      filename = paste("results//pictures//","Load_anhtrop",plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
       graph = plotbunch[i,2][[1]][[1]]
       ggsave(filename, graph,device = "png",width=8,height=6,units="in")
     } 
@@ -841,7 +728,7 @@ writeNdviTSALinSg = function(data, sitename){
   
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste("Load_anhtrop_in_site_NDVI",plotbunch[i,1],plotbunch[i,2],".png",sep="_")
+    filename = paste("results//pictures//","Load_anhtrop_in_site_NDVI",plotbunch[i,1],plotbunch[i,2],".png",sep="_")
     graph = plotbunch[i,3][[1]][[1]]
     ggsave(filename, graph,device = "png",width=8,height=6,units="in")
   } 
@@ -872,7 +759,7 @@ writePRITSALg = function(data, sitename){
   
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste("Load_anhtrop",plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
+    filename = paste("results//pictures//","Load_anhtrop",plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=8,height=6,units="in")
   } 
@@ -902,7 +789,7 @@ writePRITSALinSg = function(data, sitename){
   
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste("Load_anhtrop_insite_PRI_",plotbunch[i,1],plotbunch[i,2],".png",sep="_")
+    filename = paste("results//pictures//","Load_anhtrop_insite_PRI_",plotbunch[i,1],plotbunch[i,2],".png",sep="_")
     graph = plotbunch[i,3][[1]][[1]]
     ggsave(filename, graph,device = "png",width=8,height=6,units="in")
   } 
@@ -931,7 +818,7 @@ data$theta = data$theta+180
   
   #sitename = "RUDN"
   for(i in 1:nrow(plotbunch)){
-    filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+    filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
@@ -956,7 +843,7 @@ writeNHzTSg = function(data, sitename){
   
   #sitename = "RUDN"
   for(i in 1:nrow(plotbunch)){
-    filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+    filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
@@ -980,7 +867,7 @@ writeTairRhTSg = function(data, sitename){
   
   #sitename = "RUDN"
   for(i in 1:nrow(plotbunch)){
-    filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+    filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
@@ -1007,7 +894,7 @@ writeTairRhTSAlg = function(data){
   
   #sitename = "RUDN"
   for(i in 1:nrow(plotbunch)){
-    filename = paste("Ant_load",names(plotbunch)[2],plotbunch[i,1],".png",sep="_")
+    filename = paste("results//pictures//","Ant_load",names(plotbunch)[2],plotbunch[i,1],".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
@@ -1044,7 +931,7 @@ writeAngleDeviation = function(data, sitename){
 #scale_y_continuous(limits=c(-10,10))+
 
   for(i in 1:nrow(plotbunch)){
-    filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+    filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
@@ -1076,7 +963,7 @@ writeAngleDeviationTT = function(data, sitename){
   #scale_y_continuous(limits=c(-10,10))+
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+    filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
@@ -1108,9 +995,9 @@ writeZ2TT = function(data, sitename,meteo_data){
   #scale_y_continuous(limits=c(-10,10))+
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+    filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
-    ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
+    ggsave( filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
 }
 
@@ -1132,7 +1019,7 @@ writeZ2TTh = function(data, sitename,meteo_data){
   #scale_y_continuous(limits=c(-10,10))+
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+    filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     try(ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in"),T)
   } 
@@ -1168,7 +1055,7 @@ writeZ2 = function(data, sitename,meteo_data){
   #scale_y_continuous(limits=c(-10,10))+
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+    filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
   } 
@@ -1202,7 +1089,7 @@ writeZ2ALg = function(data,meteo_data){
     )
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste("Load_anhtrop",plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
+    filename = paste("results//pictures//", "Load_anhtrop",plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=8,height=6,units="in")
   } 
@@ -1237,7 +1124,7 @@ writeZ2ALinSg = function(data,meteo_data){
     )
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste("Load_anhtrop_insite_tremble_",plotbunch[i,1],plotbunch[i,2],".png",sep="_")
+    filename = paste("results//pictures//", "Load_anhtrop_insite_tremble_",plotbunch[i,1],plotbunch[i,2],".png",sep="_")
     graph = plotbunch[i,3][[1]][[1]]
     ggsave(filename, graph,device = "png",width=8,height=6,units="in")
   } 
@@ -1246,8 +1133,8 @@ writeZ2ALinSg = function(data,meteo_data){
 
 
 writeGrowthTTm = function(Alldata){
-  months_n = factor(c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
-                    levels = c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
+  months_n = factor(c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
+                    levels = c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
   for(sitename in Alldata$Site %>% unique){
     data  = Alldata %>% filter(Site == sitename)
     dat = data %>% group_by(id, month) %>% summarise(growth = max(growth, na.rm=T))
@@ -1261,7 +1148,7 @@ writeGrowthTTm = function(Alldata){
     #scale_y_continuous(limits=c(-10,10))+
     
     for(i in 1:nrow(plotbunch)){
-      filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+      filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
       graph = plotbunch[i,2][[1]][[1]]
       ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
     } 
@@ -1271,8 +1158,8 @@ writeGrowthTTm = function(Alldata){
 
 
 writeGrowthSpm = function(Alldata){
-  months_n = factor(c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
-                    levels = c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
+  months_n = factor(c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
+                    levels = c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
   for(sitename in Alldata$Site %>% unique){
     data  = Alldata %>% filter(Site == sitename)
     dat = data %>% group_by(id, Species,month) %>% 
@@ -1290,7 +1177,7 @@ writeGrowthSpm = function(Alldata){
     #scale_y_continuous(limits=c(-10,10))+
     
     for(i in 1:nrow(plotbunch)){
-      filename = paste(names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
+      filename = paste("results//pictures//",names(plotbunch)[2],plotbunch[i,1],sitename,".png",sep="_")
       graph = plotbunch[i,2][[1]][[1]]
       ggsave(filename, graph,device = "png",width=5.83,height=4.13,units="in")
     } 
@@ -1301,8 +1188,8 @@ writeGrowthSpm = function(Alldata){
 
 writGrowthALSpm = function(Alldata){
   
-     months_n = factor(c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
-                    levels = c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
+     months_n = factor(c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
+                    levels = c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
     data  = Alldata 
     dat = data %>% group_by(id, Species,load,month) %>% 
       summarise(growth = max(growth, na.rm=T)) %>% group_by(load,Species,month) %>%
@@ -1319,7 +1206,7 @@ writGrowthALSpm = function(Alldata){
 
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste("Load_anhtrop",plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
+    filename = paste("results//pictures//","Load_anhtrop",plotbunch[i,1],names(plotbunch)[2],".png",sep="_")
     graph = plotbunch[i,2][[1]][[1]]
     ggsave(filename, graph,device = "png",width=8,height=6,units="in")
   } 
@@ -1327,8 +1214,8 @@ writGrowthALSpm = function(Alldata){
 
 writGrowthALSinSpm = function(Alldata){
   
-  months_n = factor(c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
-                    levels = c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
+  months_n = factor(c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
+                    levels = c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
   data  = Alldata 
   dat = data %>% group_by(id, Species,insite_load,Site,month) %>% 
     summarise(growth = max(growth, na.rm=T)) %>% group_by(insite_load,Site,Species,month) %>%
@@ -1345,15 +1232,15 @@ writGrowthALSinSpm = function(Alldata){
   
   
   for(i in 1:nrow(plotbunch)){
-    filename = paste("Load_anhtrop_insite_growth_",plotbunch[i,1],plotbunch[i,2],".png",sep="_")
+    filename = paste("results//pictures//","Load_anhtrop_insite_growth_",plotbunch[i,1],plotbunch[i,2],".png",sep="_")
     graph = plotbunch[i,3][[1]][[1]]
     ggsave(filename, graph,device = "png",width=8,height=6,units="in")
   } 
 } 
 
 
-           # months_n = factor(c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
-           #                   levels = c("Ягварь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
+           # months_n = factor(c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"), 
+           #                   levels = c("Январь","Февраль","Март","Апрель","Май","Июнь", "Июль","Август","Сентябрь", "Октябрь","Ноябрь","Декабрь"))
            # 
            #   AllData = AllData%>%mutate(month = month(time))
            #   plotbunch = AllData%>%group_by(load,Species, hour, month,id) %>% filter(month<11 & month>4)%>%
@@ -1380,6 +1267,7 @@ writGrowthALSinSpm = function(Alldata){
 
 
 writeTairRhTSAlg(AllData)
+writeTairRhTSAlg(AllData%>%filter(Site == "TROITSK"))
 
 writeGrowthTTm(AllData)
 writeGrowthSpm(AllData)

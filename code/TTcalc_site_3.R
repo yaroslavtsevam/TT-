@@ -8,7 +8,7 @@
 # in our case it is 500 and 600. Previous version which used asimetrical interval 550-570 - called PRI2 
 # Luca's spectral calibration added
 
-source("TT_graphs.R")
+source("code//TT_graphs.R") 
 
 library(tidyverse)
 library(plyr)
@@ -706,7 +706,9 @@ TTcalc_site = function(server,
   if(!is.null(import_folder_name)){
     cat("Yep, there are some \n")
       data_bc = data.frame()
-      import_folder_name = paste("./",import_folder_name,sep="")
+      import_folder_name = paste("",import_folder_name,sep="")
+      
+      
       for(file in list.files(import_folder_name,pattern="TT*")) {
         temp = suppressWarnings(suppressMessages(
           read_delim(paste(import_folder_name,file, sep="/"),
