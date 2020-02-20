@@ -47,11 +47,6 @@ plot(zoo(ap(days=days,lat=lat,lon=lon,extraT=NULL, A=A,B=B,SSD=sunshine),order.b
 # CC	 Vector of length n containing daily cloud coverage [octas].
 
 
-data(Metdata)
-tmax <- Metdata$meteo$TEMP_MAX
-tmin <- Metdata$meteo$TEMP_MIN
-cc <- Metdata$meteo$CLOUD_DAYTIME_TOTAL
-
 
 dat = data %>% group_by(doy) %>% filter(Species=="TTR") %>% summarise(time = mean(time), tmax=max(tair), tmin=min(tair),rh=mean(rh, na.rm=T), 
                                                                       sunshine = sum((TTR_500c+TTR_450c)/(TTR_760c+TTR_730c)>2, na.rm = T)*1.5,
@@ -88,3 +83,14 @@ plot(dat$time, dat$eT)
 
 ggplotly(qplot(data$time, (data$TTR_500c+data$TTR_450c)/(data$TTR_760c+data$TTR_730c), ylim=c(0,50) ))
 
+### GROUPINF
+
+tree_groups = data.frame(id = c("218A0138","218A0153","218A0111","218A0079","218A0186","218A0121","218A0214","218A0277","218A0124","218A0285","218A0088","218A0210",
+                           "218A0285","218A0077","218A0193","218A0270","218A0281","218A0262","218A0248","218A0212"), height = 
+                           c("high","low","low","high","high","high","high","high","low","low","low","low","high","high","high","low","low",
+                             "low","high","high"), group = c("lone","lone","lone","lone","lone","group","group","group","group","group","group","group",
+                          "group","group","group","lone","lone","lone","group","group"),open =c("closed","open","open","open","open","closed","closed",
+                            "closed","closed","closed","closed","closed","closed","closed","closed","closed","closed","opened","closed","closed"))
+
+data = data %>% left_join(tree_groups, by="id")                         
+                         

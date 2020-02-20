@@ -16,6 +16,8 @@ RUDN <- brick(RUDN)
 TIM <- stack("Y:\\YandexDisk\\NDVI\\SATELITE_DATA\\011169772050_01\\011169772050_01_P001_MUL\\19JUN04090502-M2AS-011169772050_01_P001.TIF")
 TIM <- brick(TIM)
 
+CENTER = stack("Y:\\YandexDisk\\NDVI\\SATELITE_DATA\\PANSHARP\\SCHOOL+BOLOTNAYA+ZARYADYE-04-06-19.tif")
+CNETER = brick(CENTER)
 
 refl_NIR = function(nir){
   Lnir = nir*0.982*0.117971/1.004-3.752
@@ -50,14 +52,14 @@ refl_NDVI = function(raster,nir_band,red_band){
   ndvi = (nir-red)/(nir+red)
   return(ndvi)
 }
-
+center_ndvi = refl_NDVI(CENTER,4,3)  
 rudn_ndvi = refl_NDVI(RUDN,4,3)  
 tim_ndvi = refl_NDVI(TIM,4,3) 
 timrudn_ndvi = raster::merge(rudn_ndvi,tim_ndvi)
 
 writeRaster(rudn_ndvi, filename=file.path(getwd(), "rudn_ndvi.tif"), format="GTiff", overwrite=TRUE)
 writeRaster(tim_ndvi, filename=file.path(getwd(), "tim_ndvi.tif"), format="GTiff", overwrite=TRUE)
-
+writeRaster(center_ndvi, filename=file.path(getwd(), "center_ndvi.tif"), format="GTiff", overwrite=TRUE)
 q85 = function(x){
   return(quantile(x,0.85))
 }
