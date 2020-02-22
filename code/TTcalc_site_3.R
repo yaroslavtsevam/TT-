@@ -73,9 +73,14 @@ TTBasicCalc = function(tdt){
 
   tdt$bat_corr  = tdt$X7*(48.76*tdt$X8^3 - 698.21*tdt$X8^2 +
                             3317.7*tdt$X8 - 2930)/2300
-  tdt$bat_corr2 = tdt$X7*2300/(48.76*tdt$volt^3 - 698.21*tdt$volt^2 +
-                                 3317.7*tdt$volt - 2930)
-  tdt$dist      = (0.1701*tdt$bat_corr)/(106520 - tdt$bat_corr)
+  #tdt$bat_corr2 = tdt$X7*2300/(48.76*tdt$volt^3 - 698.21*tdt$volt^2 +
+  #                               3317.7*tdt$volt - 2930)
+  
+  #tdt$dist      = (0.1701*tdt$bat_corr)/(106520 - tdt$bat_corr)
+  
+  tdt$involt = tdt$X7*1.1/tdt$X8
+  tdt$dist = 4.6728*(tdt$X7*1.1/tdt$X8)^(-1.274)
+  
   tdt$pulses     = tdt$X7
   tdt$Hz     = tdt$X20
   tdt$dist4      =  0.000000000000000005964546138691*(tdt$X7^4) -

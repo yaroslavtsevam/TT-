@@ -85,6 +85,37 @@ AllData = rbind(
   SHERdata[[2]]
 )
 
+TT = SHERdata[[2]] %>% filter(id =="218A0274") 
+
+TRSKdata[[2]]$id %>% unique()
+
+plot(TRSKdata[[2]]$b_V_810,TRSKdata[[2]]$involt )
+plot(TRSKdata[[2]]$time,TRSKdata[[2]]$t1 )
+S=SHERdata[[2]]
+ggplot(data=S)+
+  geom_point(aes(x=time,y=dist), colour="black")+
+  geom_point(aes(x=time,y=volt), colour="blue")+
+  facet_wrap(~id, nrow=4)+
+  ylim(0,5)+
+  xlim(0,1)
+
+ggplot(data=TRSKdata[[2]]%>%filter(doy>190))+
+  geom_point(aes(x=time,y=dist, color=rh))+
+  geom_line(aes(x=time,y=volt, color=rh),span=20)+
+  facet_wrap(~id, nrow=4)+
+  ylim(0,7)
+
+
+
+TT = TRSKdata[[2]] %>% filter(id =="218A0117") 
+TT$tair = TT$tair+273
+mod1 = lm(dist~tair,data=TT)
+summary(mod1)
+
+
+
+
+#
 
 
 
@@ -95,24 +126,7 @@ AllData = rbind(
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Climat comparison graphs
+  #Climat comparison graphs
 
 data = RUDNdata[[2]]
 data = left_join(data,meteo_data, by=c("year","doy","hour"))
