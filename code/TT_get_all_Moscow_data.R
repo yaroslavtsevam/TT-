@@ -44,7 +44,8 @@ BLTNdata=TTcalc_site("http://naturetalkers.altervista.org/C18A0024/ttcloud.txt",
                      import_folder_name = NULL,
                      first_imported_dates_reconstructed = F,
                      "data/full_TT_desc.csv",
-                     "BOLOTNAYA")
+                     "BOLOTNAYA",
+                     verbose="mem")
 
 SCHLdata=TTcalc_site("http://naturetalkers.altervista.org/C18A0023/ttcloud.txt",
                      installation_start,
@@ -58,7 +59,8 @@ SHERdata=TTcalc_site("http://naturetalkers.altervista.org/C1870015/ttcloud.txt",
                      import_folder_name = NULL,
                      first_imported_dates_reconstructed = F,
                      "data/full_TT_desc.csv",
-                     "SCHERBINKA")
+                     "SCHERBINKA",
+                     verbose = "con")
 
 GRDNdata  = TTcalc_site("http://naturetalkers.altervista.org/C18A0026/ttcloud.txt",
                         installation_start,
@@ -85,6 +87,23 @@ AllData = rbind(
   SCHLdata[[2]],
   SHERdata[[2]]
 )
+
+
+tdt = dataR %>% group_by(id,doy, Species) %>% summarise(LAIm = mean(LAIb, na.rm=T),LAIx = max(LAIb, na.rm=T) )
+
+ggplot(data =tdt,aes(x=doy,y=LAIx ))+geom_point(aes(color=Species))+facet_wrap(vars(id),nrow = 4)
+
+data = BLTNdata[[2]]
+
+dataR = TTR_add(data, "con")
+dataR$LAIb[is.infinite(dataR$LAIb)] = NA 
+dataR %>% group_by(id) %>% summarise(LAIm = mean(LAIb, na.rm=T),LAIx = max(LAIb, na.rm=T) )
+dataR$LAIb %>% summary
+
+
+
+
+
 
 TT = SHERdata[[2]] %>% filter(id =="218A0274") 
 

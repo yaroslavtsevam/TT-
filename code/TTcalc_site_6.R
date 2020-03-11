@@ -2,7 +2,8 @@
 # version 6
 # What is new
 
-# Corrected variable viltering according to it position, now filtered by name
+# Added LAI calculation according top Beer law
+# Corrected variable filtering according to it position, now filtered by name
 # Starting thinking to switch to dtplyr
 # Switched from cat to special logging function
 # Switching to foreach %dopar%
@@ -989,78 +990,70 @@ TTcalc_site = function(server,
 #which could be assumed to be in a same conditions and that there is one TTR per site
 TTR_add = function(data, verboseFlag){
   
-  names(data)[names(data) == "id.x"] = "id"
   fun_log(verboseFlag = verboseFlag, c("Starting site TTR data calculation \n"))
-  print(data)
-  #Everything commented below should being already done in BasicCalc
   
-  #data$b_R_650c = data$b_R_650*0.7829+202.77
-  #data$b_O_600c = data$b_O_600*0.8654-328.08
-  #data$b_Y_570c = data$b_Y_570*1.0462-666.72
-  #data$b_G_550c = data$b_G_550*1.0546-842.1
-  #data$b_B_500c = data$b_B_500*0.6257-232.13
-  #data$b_V_450c = data$b_V_450*0.4562-212.62
+  if(any(data$Species == "TTR")){
+    names(data)[names(data) == "id.x"] = "id"
+    
+   
+    
+    data$b_R_650c[data$b_R_650c < 0] = 0
+    data$b_O_600c[data$b_O_600c < 0] = 0
+    data$b_Y_570c[data$b_Y_570c < 0] = 0
+    data$b_G_550c[data$b_G_550c < 0] = 0
+    data$b_B_500c[data$b_B_500c < 0] = 0
+    data$b_V_450c[data$b_V_450c < 0] = 0
+    data$b_W_860c[data$b_W_860c < 0] = 0
+    data$b_V_810c[data$b_V_810c < 0] = 0
+    data$b_U_760c[data$b_U_760c < 0] = 0
+    data$b_T_730c[data$b_T_730c < 0] = 0
+    data$b_S_680c[data$b_S_680c < 0] = 0
+    data$b_R_610c[data$b_R_610c < 0] = 0
+    
+    
+    TTRdatasum  = data %>%filter(Species == "TTR") %>% group_by(Site,doy,hour) %>% summarise( 
+      TTair = mean(tair,na.rm = T),
+      TTrh  = mean(rh,  na.rm = T),
+      TTR_650c = mean(b_R_650c,na.rm = T),
+      TTR_600c = mean(b_O_600c,na.rm = T),
+      TTR_570c = mean(b_Y_570c,na.rm = T),
+      TTR_550c = mean(b_G_550c,na.rm = T),
+      TTR_500c = mean(b_B_500c,na.rm = T),
+      TTR_450c = mean(b_V_450c,na.rm = T),
+      TTR_860c = mean(b_W_860c,na.rm = T),
+      TTR_810c = mean(b_V_810c,na.rm = T),
+      TTR_760c = mean(b_U_760c,na.rm = T),
+      TTR_730c = mean(b_T_730c,na.rm = T),
+      TTR_680c = mean(b_S_680c,na.rm = T),
+      TTR_610c = mean(b_R_610c,na.rm = T),
+      TTR_650 = mean(b_R_650,na.rm = T),
+      TTR_600 = mean(b_O_600,na.rm = T),
+      TTR_570 = mean(b_Y_570,na.rm = T),
+      TTR_550 = mean(b_G_550,na.rm = T),
+      TTR_500 = mean(b_B_500,na.rm = T),
+      TTR_450 = mean(b_V_450,na.rm = T),
+      TTR_860 = mean(b_W_860,na.rm = T),
+      TTR_810 = mean(b_V_810,na.rm = T),
+      TTR_760 = mean(b_U_760,na.rm = T),
+      TTR_730 = mean(b_T_730,na.rm = T),
+      TTR_680 = mean(b_S_680,na.rm = T),
+      TTR_610 = mean(b_R_610,na.rm = T))
+    
+    
   
-  #data$b_W_860c = data$b_W_860*0.5319+334.88
-  #data$b_V_810c = data$b_V_810*0.8414+91.58
-  #data$b_U_760c = data$b_U_760*1.4549-1012.5
-  #data$b_T_730c = data$b_T_730*1.6209-1511.2
-  #data$b_S_680c = data$b_S_680*1.5199-561.56
-  #data$b_R_610c = data$b_R_610*1.6699-312.45
+    data = data %>% left_join(TTRdatasum, by=c("Site","doy","hour"))
   
-  #TTR = data %>% filter(Species == "TTR")
+    #LAI according to Beer-Law and light extinction coefficient, look into papers LAI folder
+    K = 5.2 # light extinction coefficient
+    data = data %>% mutate(LAInir = -log((b_V_810c+b_W_860c)/(TTR_860c+TTR_810c))/K)
+    data = data %>% mutate(LAIb = -log((b_V_450c+b_B_500c)/(TTR_450c+TTR_500c))/K)
+    return(data)
+  } else {
+    
+    fun_log(verboseFlag = verboseFlag, c("Looks like your site dont have TTR, returning data without change \n")) 
+    return(data)
+  }
   
-  
-  data$b_R_650c[data$b_R_650c < 0] = 0
-  data$b_O_600c[data$b_O_600c < 0] = 0
-  data$b_Y_570c[data$b_Y_570c < 0] = 0
-  data$b_G_550c[data$b_G_550c < 0] = 0
-  data$b_B_500c[data$b_B_500c < 0] = 0
-  data$b_V_450c[data$b_V_450c < 0] = 0
-  data$b_W_860c[data$b_W_860c < 0] = 0
-  data$b_V_810c[data$b_V_810c < 0] = 0
-  data$b_U_760c[data$b_U_760c < 0] = 0
-  data$b_T_730c[data$b_T_730c < 0] = 0
-  data$b_S_680c[data$b_S_680c < 0] = 0
-  data$b_R_610c[data$b_R_610c < 0] = 0
-  
-  
-  TTRdatasum  = data %>%filter(Species == "TTR") %>% group_by(Site,id, doy, hour) %>% summarise( 
-     TTair = mean(tair,na.rm = T),
-     TTrh  = mean(rh,  na.rm = T),
-     TTR_650c = mean(b_R_650c,na.rm = T),
-     TTR_600c = mean(b_O_600c,na.rm = T),
-     TTR_570c = mean(b_Y_570c,na.rm = T),
-     TTR_550c = mean(b_G_550c,na.rm = T),
-     TTR_500c = mean(b_B_500c,na.rm = T),
-     TTR_450c = mean(b_V_450c,na.rm = T),
-     TTR_860c = mean(b_W_860c,na.rm = T),
-     TTR_810c = mean(b_V_810c,na.rm = T),
-     TTR_760c = mean(b_U_760c,na.rm = T),
-     TTR_730c = mean(b_T_730c,na.rm = T),
-     TTR_680c = mean(b_S_680c,na.rm = T),
-     TTR_610c = mean(b_R_610c,na.rm = T),
-     TTR_650 = mean(b_R_650,na.rm = T),
-     TTR_600 = mean(b_O_600,na.rm = T),
-     TTR_570 = mean(b_Y_570,na.rm = T),
-     TTR_550 = mean(b_G_550,na.rm = T),
-     TTR_500 = mean(b_B_500,na.rm = T),
-     TTR_450 = mean(b_V_450,na.rm = T),
-     TTR_860 = mean(b_W_860,na.rm = T),
-     TTR_810 = mean(b_V_810,na.rm = T),
-     TTR_760 = mean(b_U_760,na.rm = T),
-     TTR_730 = mean(b_T_730,na.rm = T),
-     TTR_680 = mean(b_S_680,na.rm = T),
-     TTR_610 = mean(b_R_610,na.rm = T))
-
-  
-  print(TTRdatasum)
-  data = data %>% left_join(TTRdatasum, by=c("Site","doy","hour"))
-  print(names(data))
-#LAI according to Beer-Law and light extinction coefficient, look into papers LAI folder
-  K = 5.2 # light extinction coefficient
-  data = data %>% mutate(LAI = -log((b_V_810c+b_W_860c)/(TTR_860c+TTR_810c))/K)
-  return(data)
 }
 
 
