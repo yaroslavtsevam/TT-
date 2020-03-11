@@ -158,6 +158,7 @@ TTBasicCalc = function(tdt){
   # filtering only type 45 since left alignment - 46 type rows will be added
   # only to rows of 45 with the same rec_num
   #print(tdt)
+  print(names(tdt[,c(27,38:53)]))
   duplicated_data_row = tdt[,c(27,38:53)] %>% duplicated %>% which
   cat("\n","Table had ",dim(tdt)[1]," rows, found ",
       duplicated_data_row %>% length, " rows to be removed.","\n" )
