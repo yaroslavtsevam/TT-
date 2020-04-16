@@ -1,200 +1,201 @@
-"","Site","SiteIndex","Species","age_group_index","antrop_load","in_site_antrop_load","id","d","DBH","DTT","installation_height","VTA_score"
-"1","TROITSK","MS-4","Betula pendula","VI","Medium","High","218A0089",34.3774677078494,108,90,4,2
-"2","TROITSK","MS-4","Betula pendula","VI","Medium","High","218A0152",35.014087480217,110,94,3.8,2
-"3","TROITSK","MS-4","Betula pendula","VI","Medium","High","218A0243",32.7859182769304,103,86,3.65,3
-"4","TROITSK","MS-4","Betula pendula","VI","Medium","High","218A0244",48.0647928137524,151,111,3.66,3
-"5","TROITSK","MS-4","Betula pendula","VI","Medium","High","218A0284",36.2873270249521,114,95,3.42,3
-"6","TROITSK","MS-4","Picea abies","V","Medium","High","218A0261",40.4253555453414,127,103,3.5,3
-"7","TROITSK","MS-4","Picea abies","V","Medium","High","218A0286",44.5633840657307,140,120,3.6,3
-"8","TROITSK","MS-4","Picea abies","VI","Medium","High","218A0199",46.7915532690172,147,138,3.5,3
-"9","TROITSK","MS-4","Picea abies","VI","Medium","High","218A0295",43.9267642933631,138,116,3.5,3
-"10","TROITSK","MS-4","Quercus robur","VI","Medium","High","218A0081",37.5605665696873,118,114,3.75,2
-"11","TROITSK","MS-4","Quercus robur","VI","Medium","High","218A0083",46.4732433828334,146,140,3.5,2
-"12","TROITSK","MS-4","Quercus robur","VI","Medium","High","218A0086",46.1549334966496,145,127,3.5,3
-"13","TROITSK","MS-4","Quercus robur","VI","Medium","High","218A0170",40.4253555453414,127,111,3.6,2
-"14","TROITSK","MS-4","Quercus robur","VI","Medium","High","218A0179",46.1549334966496,145,131,3.6,3
-"15","TROITSK","MS-4","Quercus robur","VI","Medium","High","218A0296",37.5605665696873,118,114,3.5,2
-"16","TROITSK","MS-4","Tilia cordata","IV","Medium","High","218A0236",32.7859182769304,103,96,3.8,2
-"17","TROITSK","MS-4","Tilia cordata","IV","Medium","High","218A0237",31.1943688460115,98,89,3.55,4
-"18","TROITSK","MS-4","Tilia cordata","VI","Medium","High","218A0117",51.2478916755903,161,146,3.45,2
-"19","TROITSK","MS-4","Tilia cordata","VI","Medium","High","218A0292",38.8338061144225,122,121,3,3
-"20","SCHERBINKA","MS-5","Salix alba","III","High","High","218A0098",28.6478897565412,90,79,3.5,2
-"21","SCHERBINKA","MS-5","Salix alba","III","High","High","218A0189",28.0112699841736,88,78,3.47,2
-"22","SCHERBINKA","MS-5","Salix alba","III","High","High","218A0227",35.014087480217,110,118,3.5,2
-"23","SCHERBINKA","MS-5","Salix alba","III","High","High","218A0242",33.1042281631142,104,93,3.5,2
-"24","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0074",53.4760608788768,168,157,3.5,2
-"25","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0076",46.4732433828334,146,124,3.6,3
-"26","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0125",43.6084544071793,137,119,3.5,3
-"27","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0127",54.1126806512444,170,138,3.8,2
-"28","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0128",55.0676103097958,173,142,3.6,2
-"29","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0144",37.2422566835035,117,105,3.6,3
-"30","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0162",63.0253574643906,198,151,4,2
-"31","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0174",55.7042300821634,175,138,3.55,2
-"32","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0184",44.8816939519145,141,125,3.5,2
-"33","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0194",42.653524748628,134,131,3.5,2
-"34","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0200",38.1971863420549,120,103,3.6,2
-"35","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0216",49.9746521308551,157,139,3.57,2
-"36","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0267",37.2422566835035,117,93,3.5,3
-"37","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0274",61.7521179196554,194,106,3.5,2
-"38","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0290",38.8338061144225,122,98,3.45,2
-"39","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0299",45.2000038380983,142,126,3.5,2
-"40","BOLOTNAYA","MS-6","Acer platanoides","VI","High","High","218A0262",34.6957775940332,109,106,3.35,1
-"41","BOLOTNAYA","MS-6","Acer platanoides","VI","High","High","218A0281",45.8366236104659,144,107,3.22,4
-"42","BOLOTNAYA","MS-6","Acer platanoides","VI","High","Low","218A0077",35.6507072525846,112,108,3.84,2
-"43","BOLOTNAYA","MS-6","Acer platanoides","VI","High","Low","218A0193",47.7464829275686,150,151,3.66,1
-"44","BOLOTNAYA","MS-6","Acer platanoides","VI","High","Low","218A0212",33.7408479354818,106,105,3.4,3
-"45","BOLOTNAYA","MS-6","Acer platanoides","VI","High","Low","218A0255",34.3774677078494,108,102,3.76,2
-"46","BOLOTNAYA","MS-6","Betula pendula","IV","High","Low","218A0088",20.6901426019464,65,58,3.35,1
-"47","BOLOTNAYA","MS-6","Betula pendula","IV","High","Low","218A0104",21.6450722604978,68,53,3.4,1
-"48","BOLOTNAYA","MS-6","Betula pendula","IV","High","Low","218A0210",21.0084524881302,66,52,3.55,1
-"49","BOLOTNAYA","MS-6","Betula pendula","VI","High","Low","218A0285",23.8732414637843,75,60,3.35,1
-"50","BOLOTNAYA","MS-6","Larix sibirica","IV","High","Low","218A0277",26.1014106670708,82,75,3.62,2
-"51","BOLOTNAYA","MS-6","Larix sibirica","V","High","Low","218A0079",32.1492985045629,101,96,3.7,3
-"52","BOLOTNAYA","MS-6","Larix sibirica","VI","High","Low","218A0138",40.7436654315252,128,113,3.85,2
-"53","BOLOTNAYA","MS-6","Tilia cordata","III","High","High","218A0270",25.1464810085195,79,34,3.74,3
-"54","BOLOTNAYA","MS-6","Tilia cordata","IV","High","High","218A0111",28.0112699841736,88,80,4.07,3
-"55","BOLOTNAYA","MS-6","Tilia cordata","IV","High","High","218A0153",35.3323973664008,111,97,3.75,2
-"56","BOLOTNAYA","MS-6","Tilia cordata","VI","High","High","218A0121",37.8788764558711,119,100,3.56,1
-"57","BOLOTNAYA","MS-6","Tilia cordata","VI","High","High","218A0186",40.4253555453414,127,109,3.6,3
-"58","BOLOTNAYA","MS-6","Tilia cordata","VI","High","Low","218A0248",37.8788764558711,119,100,3.5,2
-"59","SCHOOL1234","MS-7","Acer fraxinifolium","IV","High","High","218A0099",28.0112699841736,88,81,3.8,3
-"60","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0001",27.6929600979898,87,84,3.49,2
-"61","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0067",35.9690171387684,113,117,3.76,3
-"62","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0095",36.2873270249521,114,118,3.76,2
-"63","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0130",25.783100780887,81,84,3.8,3
-"64","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0131",26.4197205532546,83,80,3.7,3
-"65","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0157",31.1943688460115,98,94,3.16,3
-"66","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0160",25.4647908947033,80,87,3.25,3
-"67","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0190",39.47042588679,124,121,3.93,3
-"68","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0191",28.6478897565412,90,80,4.05,3
-"69","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0196",37.8788764558711,119,116,3.26,3
-"70","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0201",21.9633821466816,69,79,3.96,3
-"71","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0205",47.7464829275686,150,121,3.43,3
-"72","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0211",49.0197224723038,154,150,3.04,2
-"73","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0232",29.9211293012763,94,69,3.94,3
-"74","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0252",36.2873270249521,114,118,4,2
-"75","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0254",46.4732433828334,146,131,3.4,3
-"76","SCHOOL1234","MS-7","Populus nigra","VI","High","High","218A0092",67.1633859847798,211,166,3.8,3
-"77","SCHOOL1234","MS-7","Populus nigra","VI","High","High","218A0215",90.7183175623803,285,207,3.7,3
-"78","RUDN","OL-1","Acer platanoides","IV","Medium","High","218A0085",24.8281711223357,78,62,3.7,2
-"79","RUDN","OL-1","Acer platanoides","IV","Medium","High","218A0155",23.5549315776005,74,55,3.5,2
-"80","RUDN","OL-1","Acer platanoides","IV","Medium","High","218A0173",24.1915513499681,76,62,3.5,2
-"81","RUDN","OL-1","Acer platanoides","IV","Medium","High","218A0268",19.0985931710274,60,60,3.5,2
-"82","RUDN","OL-1","Acer platanoides","IV","Medium","High","218A0280",22.2816920328653,70,53,3.5,2
-"83","RUDN","OL-1","Acer platanoides","VI","Medium","High","218A0071",29.6028194150925,93,81,3.5,3
-"84","RUDN","OL-1","Acer platanoides","VI","Medium","High","218A0142",26.7380304394384,84,62,3.5,1
-"85","RUDN","OL-1","Acer platanoides","VI","Medium","High","218A0147",26.7380304394384,84,68,3.5,2
-"86","RUDN","OL-1","Acer platanoides","VI","Medium","High","218A0178",26.1014106670708,82,67,3.4,1
-"87","RUDN","OL-1","Acer platanoides","VI","Medium","Low","218A0171",26.1014106670708,82,74,3.5,3
-"88","RUDN","OL-1","Betula pendula","IV","Medium","Low","218A0221",21.9633821466816,69,66,3.5,2
-"89","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0062",25.4647908947033,80,64,3.5,1
-"90","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0146",30.8760589598277,97,80,3.5,2
-"91","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0168",30.2394391874601,95,71,3.5,1
-"92","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0230",26.7380304394384,84,69,3.5,1
-"93","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0233",28.6478897565412,90,65,3.5,1
-"94","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0240",33.7408479354818,106,83,3.5,1
-"95","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0283",24.5098612361519,77,64,3.7,1
-"96","RUDN","OL-1","Picea abies","IV","Medium","Low","218A0149",22.4408469759572,70.5,57,3.6,2
-"97","RUDN","OL-1","Picea abies","IV","Medium","Low","218A0175",19.735212943395,62,52,3.5,2
-"98","RUDN","OL-1","Picea abies","IV","Medium","Low","218A0238",23.8732414637843,75,72,3.5,2
-"99","RUDN","OL-1","Picea abies","IV","Medium","Low","218A0245",20.3718327157626,64,54.5,3.5,2
-"100","RUDN","OL-1","Picea abies","V","Medium","Low","218A0107",24.6690161792438,77.5,74,3.5,2
-"101","RUDN","OL-1","Picea abies","V","Medium","Low","218A0192",24.5098612361519,77,70,3.5,1
-"102","RUDN","OL-1","Picea abies","VI","Medium","Low","218A0119",26.5788754963465,83.5,74,3.5,2
-"103","RUDN","OL-1","Picea abies","VI","Medium","Low","218A0198",26.4197205532546,83,75,3.5,2
-"104","RUDN","OL-1","Pinus sylvestris","III","Medium","Low","218A0108",21.326762374314,67,59.5,3.6,2
-"105","RUDN","OL-1","Pinus sylvestris","IV","Medium","Low","218A0114",26.7380304394384,84,67,3.5,2
-"106","RUDN","OL-1","Pinus sylvestris","IV","Medium","Low","218A0115",30.2394391874601,95,85.5,3.5,3
-"107","RUDN","OL-1","Pinus sylvestris","IV","Medium","Low","218A0122",30.2394391874601,95,82.5,3.64,2
-"108","RUDN","OL-1","Pinus sylvestris","IV","Medium","Low","218A0123",32.1492985045629,101,97,3.5,2
-"109","RUDN","OL-1","Pinus sylvestris","IV","Medium","Low","218A0129",23.2366216914167,73,65.5,3.6,2
-"110","RUDN","OL-1","Pinus sylvestris","VI","Medium","Low","218A0110",27.6929600979898,87,72,3.5,2
-"111","RUDN","OL-1","Pinus sylvestris","VI","Medium","Low","218A0118",27.6929600979898,87,69,3.6,3
-"112","RUDN","OL-1","Pinus sylvestris","VI","Medium","Low","218A0135",27.6929600979898,87,86,3.5,2
-"113","RUDN","OL-1","Populus tremula","III","Medium","High","218A0106",27.6929600979898,87,79,3.5,2
-"114","RUDN","OL-1","Populus tremula","III","Medium","High","218A0109",23.8732414637843,75,69,3.5,2
-"115","RUDN","OL-1","Populus tremula","III","Medium","High","218A0139",25.4647908947033,80,72,3.5,2
-"116","RUDN","OL-1","Populus tremula","III","Medium","Low","218A0100",25.783100780887,81,72,3.5,1
-"117","RUDN","OL-1","Populus tremula","III","Medium","Low","218A0102",28.6478897565412,90,65,3.5,1
-"118","RUDN","OL-1","Populus tremula","III","Medium","Low","218A0137",27.374650211806,86,82,3.5,2
-"119","RUDN","OL-1","Populus tremula","VI","Medium","Low","218A0124",58.8873289440013,185,141,0.36,1.5
-"120","RUDN","OL-1","Tilia cordata","III","Medium","High","218A0060",26.1014106670708,82,68,3.5,1
-"121","RUDN","OL-1","Tilia cordata","III","Medium","High","218A0064",21.9633821466816,69,48,3.4,3
-"122","RUDN","OL-1","Tilia cordata","III","Medium","High","218A0080",24.1915513499681,76,54,3.5,2
-"123","RUDN","OL-1","Tilia cordata","III","Medium","High","218A0084",20.0535228295788,63,50,3.2,2
-"124","RUDN","OL-1","Tilia cordata","IV","Medium","High","218A0069",27.5338051548979,86.5,75,3.6,2
-"125","RUDN","OL-1","Tilia cordata","IV","Medium","High","218A0090",28.3295798703574,89,75,3.4,2
-"126","RUDN","OL-1","Tilia cordata","IV","Medium","High","218A0224",29.4436644720006,92.5,64,3.7,1
-"127","RUDN","OL-1","Tilia cordata","IV","Medium","Low","218A0141",27.6929600979898,87,67,3.5,3
-"128","RUDN","OL-1","Tilia cordata","IV","Medium","Low","218A0151",27.6929600979898,87,70,3.5,2
-"129","TIMIRYAZEV","OL-2","Acer platanoides","III","Low","High","218A0250",16.5521140815571,52,48,3.5,3
-"130","TIMIRYAZEV","OL-2","Acer platanoides","III","Low","Low","218A0120",17.8253536262923,56,51,3.5,3
-"131","TIMIRYAZEV","OL-2","Acer platanoides","III","Low","Low","218A0249",18.7802832848437,59,52,3.5,2
-"132","TIMIRYAZEV","OL-2","Acer platanoides","IV","Low","Low","218A0219",20.6901426019464,65,60,3.5,3
-"133","TIMIRYAZEV","OL-2","Acer platanoides","VI","Low","High","218A0217",26.7380304394384,84,77,3.5,3
-"134","TIMIRYAZEV","OL-2","Acer platanoides","VI","Low","Low","218A0061",30.2394391874601,95,90.5,3.5,3
-"135","TIMIRYAZEV","OL-2","Acer platanoides","VI","Low","Low","218A0287",29.6028194150925,93,80,3.5,2
-"136","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","High","218A0082",33.422538049298,105,100,3.5,3
-"137","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","High","218A0116",24.9873260654276,78.5,77,3.9,2
-"138","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","High","218A0181",51.2478916755903,161,153,3.5,3
-"139","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","High","218A0258",35.4915523094927,111.5,102,3.5,3
-"140","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0145",29.4436644720006,92.5,82,3.5,3
-"141","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0158",28.0112699841736,88,67,3.45,4
-"142","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0163",24.1915513499681,76,76,3.7,3
-"143","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0172",34.3774677078494,108,102,3.5,3
-"144","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0183",28.966199642725,91,89,3.5,3
-"145","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0203",28.0112699841736,88,84,3.5,2
-"146","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0208",32.7859182769304,103,97,3.5,2
-"147","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0282",29.9211293012763,94,88,3.4,3
-"148","TIMIRYAZEV","OL-2","Larix sibirica","VI","Low","High","218A0075",57.2957795130823,180,164,3.5,3
-"149","TIMIRYAZEV","OL-2","Larix sibirica","VI","Low","High","218A0185",58.8873289440013,185,141,0.36,3
-"150","TIMIRYAZEV","OL-2","Larix sibirica","VI","Low","High","218A0247",56.9774696268985,179,171,3.5,3
-"151","TIMIRYAZEV","OL-2","Larix sibirica","VI","Low","High","218A0264",57.6140893992661,181,153.5,3.5,3
-"152","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","High","218A0143",62.0704278058392,195,155,3.5,2
-"153","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","High","218A0253",51.5662015617741,162,141,3.5,3
-"154","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","High","218A0275",55.3859201959796,174,157,3.5,2
-"155","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0063",42.0169049762604,132,115,3.5,3
-"156","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0096",52.8394411065093,166,141,3.5,2
-"157","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0195",54.749300423612,172,112,3.5,3
-"158","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0218",34.3774677078494,108,96.5,3.9,3
-"159","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0226",38.6746511713306,121.5,116,3.5,4
-"160","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0259",42.0169049762604,132,121,3.5,3
-"161","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0263",38.8338061144225,122,110.5,3.5,2
-"162","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0291",39.1521160006063,123,115,3.5,2
-"163","TIMIRYAZEV","OL-2","Tilia cordata","IV","Low","High","218A0257",27.6929600979898,87,79,3.5,2
-"164","TIMIRYAZEV","OL-2","Tilia cordata","IV","Low","High","218A0298",28.1704249272655,88.5,83,3.5,2
-"165","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","High","218A0065",53.4760608788768,168,147,3.5,2
-"166","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","High","218A0073",48.70141258612,153,143,3.5,2
-"167","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","High","218A0101",39.47042588679,124,115,3.5,3
-"168","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","High","218A0126",37.2422566835035,117,110,3.5,4
-"169","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","High","218A0150",36.9239467973197,116,103,3.5,3
-"170","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","High","218A0177",45.2000038380983,142,128,3.6,2
-"171","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0087",41.061975317709,129,119,3.5,3
-"172","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0112",41.3802852038928,130,119,3.5,2
-"173","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0176",35.3323973664008,111,104,3.5,3
-"174","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0209",36.9239467973197,116,107,3.5,2
-"175","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0246",39.7887357729738,125,116,3.5,2
-"176","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0256",32.4676083907466,102,94,3.5,2
-"177","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0279",41.3802852038928,130,118,3.6,2
-"178","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0289",46.1549334966496,145,133,3.6,3
-"179","GARDEN","OL-3","Acer platanoides","VI","Medium","High","218A0166",51.8845114479579,163,144,3.95,3
-"180","GARDEN","OL-3","Aesculus flava","VI","Medium","High","218A0078",42.3352148624442,133,101,3.8,3
-"181","GARDEN","OL-3","Carpinus betulus","IV","Medium","High","218A0294",35.9690171387684,113,111,3.55,2
-"182","GARDEN","OL-3","Fraxinus excelsior","VI","Medium","High","218A0271",53.157750992693,167,145,3.23,3
-"183","GARDEN","OL-3","Fraxinus ornus","VI","Medium","High","218A0265",35.014087480217,110,100,3.89,2
-"184","GARDEN","OL-3","Juglans mandshurica","VI","Medium","High","218A0094",49.0197224723038,154,131,3.76,3
-"185","GARDEN","OL-3","Junglas cinerea","VI","Medium","High","218A0272",44.5633840657307,140,131,3.9,2
-"186","GARDEN","OL-3","Larix sibirica","V","Medium","High","218A0068",43.6084544071793,137,127,3.9,3
-"187","GARDEN","OL-3","Malus domestica","IV","Medium","High","218A0132",33.422538049298,105,77,3.9,3
-"188","GARDEN","OL-3","Populus nigra","VI","Medium","High","218A0105",74.8028232531908,235,211,3.8,2
-"189","GARDEN","OL-3","Prunus avium","VI","Medium","High","218A0278",36.2873270249521,114,94,3.7,2
-"190","GARDEN","OL-3","Pyrus communis","VI","Medium","High","218A0241",30.5577490736439,96,80,3.65,2
-"191","GARDEN","OL-3","Quercus robur","VI","Medium","High","218A0091",42.653524748628,134,123.5,3.9,2
-"192","GARDEN","OL-3","Quercus rubra","VI","Medium","High","218A0197",67.4816958709636,212,160,4.5,3
-"193","GARDEN","OL-3","Robinia pseudoacacia","IV","Medium","High","218A0225",38.1971863420549,120,108,3.7,2
-"194","GARDEN","OL-3","Salix alba","VI","Medium","High","218A0182",73.8478935946394,232,189,4,3
-"195","GARDEN","OL-3","Tilia cordata","VI","Medium","High","218A0097",47.7464829275686,150,138,3.76,2
-"196","TROITSK","MS-4","TTR","","","","218A0057",,,,,
-"197","BOLOTNAYA","MS-6","TTR","","","","218A0058",,,,,
-"198","SCHOOL1234","MS-7","TTR","","","","218A0056",,,,,
-"199","TIMIRYAZEV","OL-2","TTR","","","","218A0055",,,,,
+"","Site","SiteIndex","Species","age_group_index","antrop_load","in_site_antrop_load","id","d","DBH","DTT","installation_height","VTA_score","zone"
+"1","TROITSK","MS-4","Betula pendula","VI","Medium","High","218A0089",34.3774677078494,108,90,4,2,"Southern taiga"
+"2","TROITSK","MS-4","Betula pendula","VI","Medium","High","218A0152",35.014087480217,110,94,3.8,2,"Southern taiga"
+"3","TROITSK","MS-4","Betula pendula","VI","Medium","High","218A0243",32.7859182769304,103,86,3.65,3,"Southern taiga"
+"4","TROITSK","MS-4","Betula pendula","VI","Medium","High","218A0244",48.0647928137524,151,111,3.66,3,"Southern taiga"
+"5","TROITSK","MS-4","Betula pendula","VI","Medium","High","218A0284",36.2873270249521,114,95,3.42,3,"Southern taiga"
+"6","TROITSK","MS-4","Picea abies","V","Medium","High","218A0261",40.4253555453414,127,103,3.5,3,"Southern taiga"
+"7","TROITSK","MS-4","Picea abies","V","Medium","High","218A0286",44.5633840657307,140,120,3.6,3,"Southern taiga"
+"8","TROITSK","MS-4","Picea abies","VI","Medium","High","218A0199",46.7915532690172,147,138,3.5,3,"Southern taiga"
+"9","TROITSK","MS-4","Picea abies","VI","Medium","High","218A0295",43.9267642933631,138,116,3.5,3,"Southern taiga"
+"10","TROITSK","MS-4","Quercus robur","VI","Medium","High","218A0081",37.5605665696873,118,114,3.75,2,"Southern taiga"
+"11","TROITSK","MS-4","Quercus robur","VI","Medium","High","218A0083",46.4732433828334,146,140,3.5,2,"Southern taiga"
+"12","TROITSK","MS-4","Quercus robur","VI","Medium","High","218A0086",46.1549334966496,145,127,3.5,3,"Southern taiga"
+"13","TROITSK","MS-4","Quercus robur","VI","Medium","High","218A0170",40.4253555453414,127,111,3.6,2,"Southern taiga"
+"14","TROITSK","MS-4","Quercus robur","VI","Medium","High","218A0179",46.1549334966496,145,131,3.6,3,"Southern taiga"
+"15","TROITSK","MS-4","Quercus robur","VI","Medium","High","218A0296",37.5605665696873,118,114,3.5,2,"Southern taiga"
+"16","TROITSK","MS-4","Tilia cordata","IV","Medium","High","218A0236",32.7859182769304,103,96,3.8,2,"Southern taiga"
+"17","TROITSK","MS-4","Tilia cordata","IV","Medium","High","218A0237",31.1943688460115,98,89,3.55,4,"Southern taiga"
+"18","TROITSK","MS-4","Tilia cordata","VI","Medium","High","218A0117",51.2478916755903,161,146,3.45,2,"Southern taiga"
+"19","TROITSK","MS-4","Tilia cordata","VI","Medium","High","218A0292",38.8338061144225,122,121,3,3,"Southern taiga"
+"20","SCHERBINKA","MS-5","Salix alba","III","High","High","218A0098",28.6478897565412,90,79,3.5,2,"Southern taiga"
+"21","SCHERBINKA","MS-5","Salix alba","III","High","High","218A0189",28.0112699841736,88,78,3.47,2,"Southern taiga"
+"22","SCHERBINKA","MS-5","Salix alba","III","High","High","218A0227",35.014087480217,110,118,3.5,2,"Southern taiga"
+"23","SCHERBINKA","MS-5","Salix alba","III","High","High","218A0242",33.1042281631142,104,93,3.5,2,"Southern taiga"
+"24","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0074",53.4760608788768,168,157,3.5,2,"Southern taiga"
+"25","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0076",46.4732433828334,146,124,3.6,3,"Southern taiga"
+"26","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0125",43.6084544071793,137,119,3.5,3,"Southern taiga"
+"27","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0127",54.1126806512444,170,138,3.8,2,"Southern taiga"
+"28","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0128",55.0676103097958,173,142,3.6,2,"Southern taiga"
+"29","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0144",37.2422566835035,117,105,3.6,3,"Southern taiga"
+"30","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0162",63.0253574643906,198,151,4,2,"Southern taiga"
+"31","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0174",55.7042300821634,175,138,3.55,2,"Southern taiga"
+"32","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0184",44.8816939519145,141,125,3.5,2,"Southern taiga"
+"33","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0194",42.653524748628,134,131,3.5,2,"Southern taiga"
+"34","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0200",38.1971863420549,120,103,3.6,2,"Southern taiga"
+"35","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0216",49.9746521308551,157,139,3.57,2,"Southern taiga"
+"36","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0267",37.2422566835035,117,93,3.5,3,"Southern taiga"
+"37","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0274",61.7521179196554,194,106,3.5,2,"Southern taiga"
+"38","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0290",38.8338061144225,122,98,3.45,2,"Southern taiga"
+"39","SCHERBINKA","MS-5","Salix alba","IV","High","High","218A0299",45.2000038380983,142,126,3.5,2,"Southern taiga"
+"40","BOLOTNAYA","MS-6","Acer platanoides","VI","High","High","218A0262",34.6957775940332,109,106,3.35,1,"Southern taiga"
+"41","BOLOTNAYA","MS-6","Acer platanoides","VI","High","High","218A0281",45.8366236104659,144,107,3.22,4,"Southern taiga"
+"42","BOLOTNAYA","MS-6","Acer platanoides","VI","High","Low","218A0077",35.6507072525846,112,108,3.84,2,"Southern taiga"
+"43","BOLOTNAYA","MS-6","Acer platanoides","VI","High","Low","218A0193",47.7464829275686,150,151,3.66,1,"Southern taiga"
+"44","BOLOTNAYA","MS-6","Acer platanoides","VI","High","Low","218A0212",33.7408479354818,106,105,3.4,3,"Southern taiga"
+"45","BOLOTNAYA","MS-6","Acer platanoides","VI","High","Low","218A0255",34.3774677078494,108,102,3.76,2,"Southern taiga"
+"46","BOLOTNAYA","MS-6","Betula pendula","IV","High","Low","218A0088",20.6901426019464,65,58,3.35,1,"Southern taiga"
+"47","BOLOTNAYA","MS-6","Betula pendula","IV","High","Low","218A0104",21.6450722604978,68,53,3.4,1,"Southern taiga"
+"48","BOLOTNAYA","MS-6","Betula pendula","IV","High","Low","218A0210",21.0084524881302,66,52,3.55,1,"Southern taiga"
+"49","BOLOTNAYA","MS-6","Betula pendula","IV","High","Low","218A0285",23.8732414637843,75,60,3.35,1,"Southern taiga"
+"50","BOLOTNAYA","MS-6","Larix sibirica","IV","High","Low","218A0277",26.1014106670708,82,75,3.62,2,"Southern taiga"
+"200","BOLOTNAYA","MS-6","Larix sibirica","V","High","Low","218A0214",37.56057,118,110,3.5,2,"Southern taiga"
+"51","BOLOTNAYA","MS-6","Larix sibirica","V","High","Low","218A0079",32.1492985045629,101,96,3.7,3,"Southern taiga"
+"52","BOLOTNAYA","MS-6","Larix sibirica","VI","High","Low","218A0138",40.7436654315252,128,113,3.85,2,"Southern taiga"
+"53","BOLOTNAYA","MS-6","Tilia cordata","III","High","High","218A0270",25.1464810085195,79,34,3.74,3,"Southern taiga"
+"54","BOLOTNAYA","MS-6","Tilia cordata","IV","High","High","218A0111",28.0112699841736,88,80,4.07,3,"Southern taiga"
+"55","BOLOTNAYA","MS-6","Tilia cordata","IV","High","High","218A0153",35.3323973664008,111,97,3.75,2,"Southern taiga"
+"56","BOLOTNAYA","MS-6","Tilia cordata","VI","High","High","218A0121",37.8788764558711,119,100,3.56,1,"Southern taiga"
+"57","BOLOTNAYA","MS-6","Tilia cordata","VI","High","High","218A0186",40.4253555453414,127,109,3.6,3,"Southern taiga"
+"58","BOLOTNAYA","MS-6","Tilia cordata","VI","High","Low","218A0248",37.8788764558711,119,100,3.5,2,"Southern taiga"
+"59","SCHOOL1234","MS-7","Acer fraxinifolium","IV","High","High","218A0099",28.0112699841736,88,81,3.8,3,"Southern taiga"
+"60","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0001",27.6929600979898,87,84,3.49,2,"Southern taiga"
+"61","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0067",35.9690171387684,113,117,3.76,3,"Southern taiga"
+"62","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0095",36.2873270249521,114,118,3.76,2,"Southern taiga"
+"63","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0130",25.783100780887,81,84,3.8,3,"Southern taiga"
+"64","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0131",26.4197205532546,83,80,3.7,3,"Southern taiga"
+"65","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0157",31.1943688460115,98,94,3.16,3,"Southern taiga"
+"66","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0160",25.4647908947033,80,87,3.25,3,"Southern taiga"
+"67","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0190",39.47042588679,124,121,3.93,3,"Southern taiga"
+"68","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0191",28.6478897565412,90,80,4.05,3,"Southern taiga"
+"69","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0196",37.8788764558711,119,116,3.26,3,"Southern taiga"
+"70","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0201",21.9633821466816,69,79,3.96,3,"Southern taiga"
+"71","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0205",47.7464829275686,150,121,3.43,3,"Southern taiga"
+"72","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0211",49.0197224723038,154,150,3.04,2,"Southern taiga"
+"73","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0232",29.9211293012763,94,69,3.94,3,"Southern taiga"
+"74","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0252",36.2873270249521,114,118,4,2,"Southern taiga"
+"75","SCHOOL1234","MS-7","Acer fraxinifolium","VI","High","High","218A0254",46.4732433828334,146,131,3.4,3,"Southern taiga"
+"76","SCHOOL1234","MS-7","Populus nigra","VI","High","High","218A0092",67.1633859847798,211,166,3.8,3,"Southern taiga"
+"77","SCHOOL1234","MS-7","Populus nigra","VI","High","High","218A0215",90.7183175623803,285,207,3.7,3,"Southern taiga"
+"78","RUDN","OL-1","Acer platanoides","IV","Medium","High","218A0085",24.8281711223357,78,62,3.7,2,"Southern taiga"
+"79","RUDN","OL-1","Acer platanoides","IV","Medium","High","218A0155",23.5549315776005,74,55,3.5,2,"Southern taiga"
+"80","RUDN","OL-1","Acer platanoides","IV","Medium","High","218A0173",24.1915513499681,76,62,3.5,2,"Southern taiga"
+"81","RUDN","OL-1","Acer platanoides","IV","Medium","High","218A0268",19.0985931710274,60,60,3.5,2,"Southern taiga"
+"82","RUDN","OL-1","Acer platanoides","IV","Medium","High","218A0280",22.2816920328653,70,53,3.5,2,"Southern taiga"
+"83","RUDN","OL-1","Acer platanoides","VI","Medium","High","218A0071",29.6028194150925,93,81,3.5,3,"Southern taiga"
+"84","RUDN","OL-1","Acer platanoides","VI","Medium","High","218A0142",26.7380304394384,84,62,3.5,1,"Southern taiga"
+"85","RUDN","OL-1","Acer platanoides","VI","Medium","High","218A0147",26.7380304394384,84,68,3.5,2,"Southern taiga"
+"86","RUDN","OL-1","Acer platanoides","VI","Medium","High","218A0178",26.1014106670708,82,67,3.4,1,"Southern taiga"
+"87","RUDN","OL-1","Acer platanoides","VI","Medium","Low","218A0171",26.1014106670708,82,74,3.5,3,"Southern taiga"
+"88","RUDN","OL-1","Betula pendula","IV","Medium","Low","218A0221",21.9633821466816,69,66,3.5,2,"Southern taiga"
+"89","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0062",25.4647908947033,80,64,3.5,1,"Southern taiga"
+"90","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0146",30.8760589598277,97,80,3.5,2,"Southern taiga"
+"91","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0168",30.2394391874601,95,71,3.5,1,"Southern taiga"
+"92","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0230",26.7380304394384,84,69,3.5,1,"Southern taiga"
+"93","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0233",28.6478897565412,90,65,3.5,1,"Southern taiga"
+"94","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0240",33.7408479354818,106,83,3.5,1,"Southern taiga"
+"95","RUDN","OL-1","Betula pendula","VI","Medium","Low","218A0283",24.5098612361519,77,64,3.7,1,"Southern taiga"
+"96","RUDN","OL-1","Picea abies","IV","Medium","Low","218A0149",22.4408469759572,70.5,57,3.6,2,"Southern taiga"
+"97","RUDN","OL-1","Picea abies","IV","Medium","Low","218A0175",19.735212943395,62,52,3.5,2,"Southern taiga"
+"98","RUDN","OL-1","Picea abies","IV","Medium","Low","218A0238",23.8732414637843,75,72,3.5,2,"Southern taiga"
+"99","RUDN","OL-1","Picea abies","IV","Medium","Low","218A0245",20.3718327157626,64,54.5,3.5,2,"Southern taiga"
+"100","RUDN","OL-1","Picea abies","V","Medium","Low","218A0107",24.6690161792438,77.5,74,3.5,2,"Southern taiga"
+"101","RUDN","OL-1","Picea abies","V","Medium","Low","218A0192",24.5098612361519,77,70,3.5,1,"Southern taiga"
+"102","RUDN","OL-1","Picea abies","VI","Medium","Low","218A0119",26.5788754963465,83.5,74,3.5,2,"Southern taiga"
+"103","RUDN","OL-1","Picea abies","VI","Medium","Low","218A0198",26.4197205532546,83,75,3.5,2,"Southern taiga"
+"104","RUDN","OL-1","Pinus sylvestris","III","Medium","Low","218A0108",21.326762374314,67,59.5,3.6,2,"Southern taiga"
+"105","RUDN","OL-1","Pinus sylvestris","IV","Medium","Low","218A0114",26.7380304394384,84,67,3.5,2,"Southern taiga"
+"106","RUDN","OL-1","Pinus sylvestris","IV","Medium","Low","218A0115",30.2394391874601,95,85.5,3.5,3,"Southern taiga"
+"107","RUDN","OL-1","Pinus sylvestris","IV","Medium","Low","218A0122",30.2394391874601,95,82.5,3.64,2,"Southern taiga"
+"108","RUDN","OL-1","Pinus sylvestris","IV","Medium","Low","218A0123",32.1492985045629,101,97,3.5,2,"Southern taiga"
+"109","RUDN","OL-1","Pinus sylvestris","IV","Medium","Low","218A0129",23.2366216914167,73,65.5,3.6,2,"Southern taiga"
+"110","RUDN","OL-1","Pinus sylvestris","VI","Medium","Low","218A0110",27.6929600979898,87,72,3.5,2,"Southern taiga"
+"111","RUDN","OL-1","Pinus sylvestris","VI","Medium","Low","218A0118",27.6929600979898,87,69,3.6,3,"Southern taiga"
+"112","RUDN","OL-1","Pinus sylvestris","VI","Medium","Low","218A0135",27.6929600979898,87,86,3.5,2,"Southern taiga"
+"113","RUDN","OL-1","Populus tremula","III","Medium","High","218A0106",27.6929600979898,87,79,3.5,2,"Southern taiga"
+"114","RUDN","OL-1","Populus tremula","III","Medium","High","218A0109",23.8732414637843,75,69,3.5,2,"Southern taiga"
+"115","RUDN","OL-1","Populus tremula","III","Medium","High","218A0139",25.4647908947033,80,72,3.5,2,"Southern taiga"
+"116","RUDN","OL-1","Populus tremula","III","Medium","Low","218A0100",25.783100780887,81,72,3.5,1,"Southern taiga"
+"117","RUDN","OL-1","Populus tremula","III","Medium","Low","218A0102",28.6478897565412,90,65,3.5,1,"Southern taiga"
+"118","RUDN","OL-1","Populus tremula","III","Medium","Low","218A0137",27.374650211806,86,82,3.5,2,"Southern taiga"
+"119","RUDN","OL-1","Populus tremula","VI","Medium","Low","218A0124",58.8873289440013,185,141,0.36,1.5,"Southern taiga"
+"120","RUDN","OL-1","Tilia cordata","III","Medium","High","218A0060",26.1014106670708,82,68,3.5,1,"Southern taiga"
+"121","RUDN","OL-1","Tilia cordata","III","Medium","High","218A0064",21.9633821466816,69,48,3.4,3,"Southern taiga"
+"122","RUDN","OL-1","Tilia cordata","III","Medium","High","218A0080",24.1915513499681,76,54,3.5,2,"Southern taiga"
+"123","RUDN","OL-1","Tilia cordata","III","Medium","High","218A0084",20.0535228295788,63,50,3.2,2,"Southern taiga"
+"124","RUDN","OL-1","Tilia cordata","IV","Medium","High","218A0069",27.5338051548979,86.5,75,3.6,2,"Southern taiga"
+"125","RUDN","OL-1","Tilia cordata","IV","Medium","High","218A0090",28.3295798703574,89,75,3.4,2,"Southern taiga"
+"126","RUDN","OL-1","Tilia cordata","IV","Medium","High","218A0224",29.4436644720006,92.5,64,3.7,1,"Southern taiga"
+"127","RUDN","OL-1","Tilia cordata","IV","Medium","Low","218A0141",27.6929600979898,87,67,3.5,3,"Southern taiga"
+"128","RUDN","OL-1","Tilia cordata","IV","Medium","Low","218A0151",27.6929600979898,87,70,3.5,2,"Southern taiga"
+"129","TIMIRYAZEV","OL-2","Acer platanoides","III","Low","High","218A0250",16.5521140815571,52,48,3.5,3,"Southern taiga"
+"130","TIMIRYAZEV","OL-2","Acer platanoides","III","Low","Low","218A0120",17.8253536262923,56,51,3.5,3,"Southern taiga"
+"131","TIMIRYAZEV","OL-2","Acer platanoides","III","Low","Low","218A0249",18.7802832848437,59,52,3.5,2,"Southern taiga"
+"132","TIMIRYAZEV","OL-2","Acer platanoides","IV","Low","Low","218A0219",20.6901426019464,65,60,3.5,3,"Southern taiga"
+"133","TIMIRYAZEV","OL-2","Acer platanoides","VI","Low","High","218A0217",26.7380304394384,84,77,3.5,3,"Southern taiga"
+"134","TIMIRYAZEV","OL-2","Acer platanoides","VI","Low","Low","218A0061",30.2394391874601,95,90.5,3.5,3,"Southern taiga"
+"135","TIMIRYAZEV","OL-2","Acer platanoides","VI","Low","Low","218A0287",29.6028194150925,93,80,3.5,2,"Southern taiga"
+"136","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","High","218A0082",33.422538049298,105,100,3.5,3,"Southern taiga"
+"137","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","High","218A0116",24.9873260654276,78.5,77,3.9,2,"Southern taiga"
+"138","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","High","218A0181",51.2478916755903,161,153,3.5,3,"Southern taiga"
+"139","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","High","218A0258",35.4915523094927,111.5,102,3.5,3,"Southern taiga"
+"140","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0145",29.4436644720006,92.5,82,3.5,3,"Southern taiga"
+"141","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0158",28.0112699841736,88,67,3.45,4,"Southern taiga"
+"142","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0163",24.1915513499681,76,76,3.7,3,"Southern taiga"
+"143","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0172",34.3774677078494,108,102,3.5,3,"Southern taiga"
+"144","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0183",28.966199642725,91,89,3.5,3,"Southern taiga"
+"145","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0203",28.0112699841736,88,84,3.5,2,"Southern taiga"
+"146","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0208",32.7859182769304,103,97,3.5,2,"Southern taiga"
+"147","TIMIRYAZEV","OL-2","Larix sibirica","V","Low","Low","218A0282",29.9211293012763,94,88,3.4,3,"Southern taiga"
+"148","TIMIRYAZEV","OL-2","Larix sibirica","VI","Low","High","218A0075",57.2957795130823,180,164,3.5,3,"Southern taiga"
+"149","TIMIRYAZEV","OL-2","Larix sibirica","VI","Low","High","218A0185",58.8873289440013,185,141,0.36,3,"Southern taiga"
+"150","TIMIRYAZEV","OL-2","Larix sibirica","VI","Low","High","218A0247",56.9774696268985,179,171,3.5,3,"Southern taiga"
+"151","TIMIRYAZEV","OL-2","Larix sibirica","VI","Low","High","218A0264",57.6140893992661,181,153.5,3.5,3,"Southern taiga"
+"152","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","High","218A0143",62.0704278058392,195,155,3.5,2,"Southern taiga"
+"153","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","High","218A0253",51.5662015617741,162,141,3.5,3,"Southern taiga"
+"154","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","High","218A0275",55.3859201959796,174,157,3.5,2,"Southern taiga"
+"155","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0063",42.0169049762604,132,115,3.5,3,"Southern taiga"
+"156","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0096",52.8394411065093,166,141,3.5,2,"Southern taiga"
+"157","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0195",54.749300423612,172,112,3.5,3,"Southern taiga"
+"158","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0218",34.3774677078494,108,96.5,3.9,3,"Southern taiga"
+"159","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0226",38.6746511713306,121.5,116,3.5,4,"Southern taiga"
+"160","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0259",42.0169049762604,132,121,3.5,3,"Southern taiga"
+"161","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0263",38.8338061144225,122,110.5,3.5,2,"Southern taiga"
+"162","TIMIRYAZEV","OL-2","Quercus robur","VI","Low","Low","218A0291",39.1521160006063,123,115,3.5,2,"Southern taiga"
+"163","TIMIRYAZEV","OL-2","Tilia cordata","IV","Low","High","218A0257",27.6929600979898,87,79,3.5,2,"Southern taiga"
+"164","TIMIRYAZEV","OL-2","Tilia cordata","IV","Low","High","218A0298",28.1704249272655,88.5,83,3.5,2,"Southern taiga"
+"165","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","High","218A0065",53.4760608788768,168,147,3.5,2,"Southern taiga"
+"166","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","High","218A0073",48.70141258612,153,143,3.5,2,"Southern taiga"
+"167","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","High","218A0101",39.47042588679,124,115,3.5,3,"Southern taiga"
+"168","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","High","218A0126",37.2422566835035,117,110,3.5,4,"Southern taiga"
+"169","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","High","218A0150",36.9239467973197,116,103,3.5,3,"Southern taiga"
+"170","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","High","218A0177",45.2000038380983,142,128,3.6,2,"Southern taiga"
+"171","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0087",41.061975317709,129,119,3.5,3,"Southern taiga"
+"172","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0112",41.3802852038928,130,119,3.5,2,"Southern taiga"
+"173","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0176",35.3323973664008,111,104,3.5,3,"Southern taiga"
+"174","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0209",36.9239467973197,116,107,3.5,2,"Southern taiga"
+"175","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0246",39.7887357729738,125,116,3.5,2,"Southern taiga"
+"176","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0256",32.4676083907466,102,94,3.5,2,"Southern taiga"
+"177","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0279",41.3802852038928,130,118,3.6,2,"Southern taiga"
+"178","TIMIRYAZEV","OL-2","Tilia cordata","VI","Low","Low","218A0289",46.1549334966496,145,133,3.6,3,"Southern taiga"
+"179","GARDEN","OL-3","Acer platanoides","VI","Medium","High","218A0166",51.8845114479579,163,144,3.95,3,"Southern taiga"
+"180","GARDEN","OL-3","Aesculus flava","VI","Medium","High","218A0078",42.3352148624442,133,101,3.8,3,"Southern taiga"
+"181","GARDEN","OL-3","Carpinus betulus","IV","Medium","High","218A0294",35.9690171387684,113,111,3.55,2,"Southern taiga"
+"182","GARDEN","OL-3","Fraxinus excelsior","VI","Medium","High","218A0271",53.157750992693,167,145,3.23,3,"Southern taiga"
+"183","GARDEN","OL-3","Fraxinus ornus","VI","Medium","High","218A0265",35.014087480217,110,100,3.89,2,"Southern taiga"
+"184","GARDEN","OL-3","Juglans mandshurica","VI","Medium","High","218A0094",49.0197224723038,154,131,3.76,3,"Southern taiga"
+"185","GARDEN","OL-3","Junglas cinerea","VI","Medium","High","218A0272",44.5633840657307,140,131,3.9,2,"Southern taiga"
+"186","GARDEN","OL-3","Larix sibirica","V","Medium","High","218A0068",43.6084544071793,137,127,3.9,3,"Southern taiga"
+"187","GARDEN","OL-3","Malus domestica","IV","Medium","High","218A0132",33.422538049298,105,77,3.9,3,"Southern taiga"
+"188","GARDEN","OL-3","Populus nigra","VI","Medium","High","218A0105",74.8028232531908,235,211,3.8,2,"Southern taiga"
+"189","GARDEN","OL-3","Prunus avium","VI","Medium","High","218A0278",36.2873270249521,114,94,3.7,2,"Southern taiga"
+"190","GARDEN","OL-3","Pyrus communis","VI","Medium","High","218A0241",30.5577490736439,96,80,3.65,2,"Southern taiga"
+"191","GARDEN","OL-3","Quercus robur","VI","Medium","High","218A0091",42.653524748628,134,123.5,3.9,2,"Southern taiga"
+"192","GARDEN","OL-3","Quercus rubra","VI","Medium","High","218A0197",67.4816958709636,212,160,4.5,3,"Southern taiga"
+"193","GARDEN","OL-3","Robinia pseudoacacia","IV","Medium","High","218A0225",38.1971863420549,120,108,3.7,2,"Southern taiga"
+"194","GARDEN","OL-3","Salix alba","VI","Medium","High","218A0182",73.8478935946394,232,189,4,3,"Southern taiga"
+"195","GARDEN","OL-3","Tilia cordata","VI","Medium","High","218A0097",47.7464829275686,150,138,3.76,2,"Southern taiga"
+"196","TROITSK","MS-4","TTR","","","","218A0057",,,,,,"Southern taiga"
+"197","BOLOTNAYA","MS-6","TTR","","","","218A0058",,,,,,"Southern taiga"
+"198","SCHOOL1234","MS-7","TTR","","","","218A0056",,,,,,"Southern taiga"
+"199","TIMIRYAZEV","OL-2","TTR","","","","218A0055",,,,,,"Southern taiga"

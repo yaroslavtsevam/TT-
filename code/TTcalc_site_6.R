@@ -969,9 +969,9 @@ TTcalc_site = function(server,
   SITEdata = SITEdata %>%
     mutate(Flux = u*3600*(diam^1.8777)*0.755/10000, na.rm = T)
   
-  
+  #SITEdata = BEFadd(SITEdata, verboseFlag)
   #Spectrometer calibration
-  #SITEdata  = TTR_add(SITEdata, verboseFlag)
+  SITEdata  = TTR_add(SITEdata, verboseFlag)
 
 
 
@@ -985,6 +985,33 @@ TTcalc_site = function(server,
   
 
 }
+
+#Adding Biomass calculation data ==============================================
+# Biomass calculated based on IPCC 2006 formula C = [V * D * BEF] * (1 + R) * CF
+# BCEF = BEF * D is taken from paper  doi:10.3390/f9060312 Dmitry Schepaschenko
+# Improved Estimates of Biomass Expansion Factors for Russian Forests
+# Big table of data from this paper is used in this function
+
+BEFadd = function(data, verboseFlag){
+  fun_log(verboseFlag = verboseFlag, c("Adding BEF data for biomass growth calculation \n"))
+  data = AllData
+  BEFdata = read_delim("data/BEF.csv", delim = ";")
+  data = data %>% mutate(genus = str_split(Species, " ", simplify = T)[,1])
+  data = data %>% mutate(age_group_indexes = recode(age_group_index, V = "IV", VI = "IV"))
+  data = data %>% mutate(Genum = recode(genus, Fraxinus = "Other hard deciduous", Acer = "Other hard deciduous",
+                                        Salix = "Other soft deciduous", Tilia = "Other soft deciduous"))
+  data = left_join(data, BEFdata, by =c("Genum","zone","age_group_indexes")) 
+  data = data %>% select(-genus,-age_group_indexes )
+  
+  return(data)  
+  #Other hard deciduous Fraxinus, Acer
+  #Other soft deciduous Salix, Tilia
+}
+
+
+
+
+
 #Adding TTR connected variables=================================================
 #IMPORTANT - we are assuming that one site is a group of TTs installed on trees
 #which could be assumed to be in a same conditions and that there is one TTR per site

@@ -1,0 +1,309 @@
+Sync was done today, no download 
+
+http://naturetalkers.altervista.org/C18A0031/ttcloud.txtdata read.
+
+Sync was done today, no download 
+
+http://naturetalkers.altervista.org/C18A0025/ttcloud.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 455884x21
+
+Voltage and proximity sensor 
+
+
+Table had 225174 rows, found 78087 rows to be removed.
+
+Found corrupted id: :51:54,0:38:53,0:50:09,0:55:38,0:00:40,0 removing 
+
+Checking if there are some back up data data? 
+
+Yep, there are some 
+
+Dimmension of the fileTT_100.csv:2348 - rows, 20 - columns.
+
+Dimmension of the fileTT_102.csv:2174 - rows, 20 - columns.
+
+Dimmension of the fileTT_106.csv:2567 - rows, 20 - columns.
+
+Dimmension of the fileTT_108.csv:1080 - rows, 20 - columns.
+
+Dimmension of the fileTT_109.csv:2574 - rows, 20 - columns.
+
+Dimmension of the fileTT_110.csv:1606 - rows, 20 - columns.
+
+Dimmension of the fileTT_113.csv:1454 - rows, 20 - columns.
+
+Dimmension of the fileTT_114.csv:1400 - rows, 20 - columns.
+
+Dimmension of the fileTT_115.csv:1616 - rows, 20 - columns.
+
+Dimmension of the fileTT_118.csv:1714 - rows, 20 - columns.
+
+Dimmension of the fileTT_122.csv:1620 - rows, 20 - columns.
+
+Dimmension of the fileTT_123.csv:1252 - rows, 20 - columns.
+
+Dimmension of the fileTT_124.csv:2360 - rows, 20 - columns.
+
+Dimmension of the fileTT_129.csv:1634 - rows, 20 - columns.
+
+Dimmension of the fileTT_135.csv:1284 - rows, 20 - columns.
+
+Dimmension of the fileTT_136.csv:2496 - rows, 20 - columns.
+
+Dimmension of the fileTT_137.csv:2206 - rows, 20 - columns.
+
+Dimmension of the fileTT_139.csv:2242 - rows, 20 - columns.
+
+Dimmension of the fileTT_140.csv:886 - rows, 20 - columns.
+
+Dimmension of the fileTT_141.csv:1462 - rows, 20 - columns.
+
+Dimmension of the fileTT_142.csv:1920 - rows, 20 - columns.
+
+Dimmension of the fileTT_147.csv:1622 - rows, 20 - columns.
+
+Dimmension of the fileTT_151.csv:2248 - rows, 20 - columns.
+
+Dimmension of the fileTT_155.csv:1716 - rows, 20 - columns.
+
+Dimmension of the fileTT_171.csv:2243 - rows, 20 - columns.
+
+Dimmension of the fileTT_173.csv:1732 - rows, 20 - columns.
+
+Dimmension of the fileTT_178_2.csv:1678 - rows, 20 - columns.
+
+Dimmension of the fileTT_224.csv:412 - rows, 20 - columns.
+
+Dimmension of the fileTT_266.csv:1612 - rows, 20 - columns.
+
+Dimmension of the fileTT_280.csv:126 - rows, 20 - columns.
+
+Dimmension of the fileTT_60.csv:1524 - rows, 20 - columns.
+
+Dimmension of the fileTT_64.csv:2116 - rows, 20 - columns.
+
+Dimmension of the fileTT_69.csv:1604 - rows, 20 - columns.
+
+Dimmension of the fileTT_71.csv:4 - rows, 20 - columns.
+
+Dimmension of the fileTT_80.csv:1402 - rows, 20 - columns.
+
+Dimmension of the fileTT_84.csv:18 - rows, 20 - columns.
+
+Dimmension of the fileTT_85.csv:1549 - rows, 20 - columns.
+
+Dimmension of the fileTT_90.csv:1492 - rows, 20 - columns.
+
+Binded array size00
+No sync today - downloading file 
+
+http://naturetalkers.altervista.org/C18A0024/ttcloud.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 80822x21
+
+Voltage and proximity sensor 
+
+
+Table had 39245 rows, found 2745 rows to be removed.
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 218A0058
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 962correct times 962
+
+Estimated step time is 5700
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found962
+
+Found measurements with correct timestemp:962
+
+Sync was done today, no download 
+
+http://naturetalkers.altervista.org/C18A0024/ttcloud.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 80822x21
+
+Voltage and proximity sensor 
+
+
+Table had 39245 rows, found 2745 rows to be removed.
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 218A0058
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 962correct times 962
+
+Estimated step time is 5700
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found962
+
+Found measurements with correct timestemp:962
+
+Sync was done today, no download 
+
+http://naturetalkers.altervista.org/C18A0024/ttcloud.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 80822x21
+
+Voltage and proximity sensor 
+
+
+Table had 39245 rows, found 2745 rows to be removed.
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 218A0058
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 962correct times 962
+
+Estimated step time is 5700
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found962
+
+Found measurements with correct timestemp:962
+
+Sync was done today, no download 
+
+http://naturetalkers.altervista.org/C18A0024/ttcloud.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 80822x21
+
+Voltage and proximity sensor 
+
+
+Table had 39245 rows, found 2745 rows to be removed.
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 218A0058
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 962correct times 962
+
+Estimated step time is 5700
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found962
+
+Found measurements with correct timestemp:962
+
+Sync was done today, no download 
+
+http://naturetalkers.altervista.org/C18A0024/ttcloud.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 80822x21
+
+Voltage and proximity sensor 
+
+
+Table had 39245 rows, found 2745 rows to be removed.
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 218A0058
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 962correct times 962
+
+Estimated step time is 5700
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found962
+
+Found measurements with correct timestemp:962
+
+Sync was done today, no download 
+
+http://naturetalkers.altervista.org/C18A0024/ttcloud.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 80822x21
+
+Voltage and proximity sensor 
+
+
+Table had 39245 rows, found 2745 rows to be removed.
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 218A0058
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 962correct times 962
+
+Estimated step time is 5700
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found962
+
+Found measurements with correct timestemp:962
+

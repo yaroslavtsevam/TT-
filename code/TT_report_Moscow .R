@@ -1,15 +1,6 @@
 # TODO Fix the code, so all the hacks in the code will be in correct all_data_csv
 #  
 
-
-
-
-
-
-
-
-
-
 source("code//TTcalc_site_3.R")
 
 library(ggpmisc)
