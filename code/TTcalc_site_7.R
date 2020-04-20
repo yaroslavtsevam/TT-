@@ -1011,7 +1011,7 @@ TTcalc_site = function(server,
 
 BEFadd = function(data, verboseFlag){
   fun_log(verboseFlag = verboseFlag, c("Adding BEF data for biomass growth calculation \n"))
-  data = AllData
+  
   BEFdata = read_delim("data/BEF.csv", delim = ";")
   data = data %>% mutate(genus = str_split(Species, " ", simplify = T)[,1])
   data = data %>% mutate(age_group_indexes = recode(age_group_index, V = "IV", VI = "IV"))
