@@ -84,16 +84,6 @@ TTR  = AllData %>% filter(!is.na(TTair))
 
 
 
-TTR = TTR %>% mutate( dTair = tair - TTair)
-
-TTR = TTR %>% filter(Site %in% c("BOLOTNAYA","TROITSK"))
-TTR = TTR %>% filter(Species != "TTR")
-TTR$LAIb[is.infinite(TTR$LAIb)] = NA
-# T dif
-
-
-LAI = TTR %>% group_by(Site, Species, doy)%>% summarise(LAImax = max(LAIb, na.rm = T), LAImin = min(LAIb,na.rm = T), LAImean = mean(LAIb, na.rm=T))
-
 
 #######################################  Temperature #############################################
 
@@ -248,118 +238,174 @@ write.csv(Bdata, file="data.csv")
 
 ###################                    Growth
 
-Growth  = TTR %>% group_by(Site, Species, id)%>% filter(volt >4)%>% summarise(growth = min(detrend(dist)) - first(detrend(dist)))
-rudn_growth = read_delim("data//proximity_RUDN.csv", delim = ";")
-rudn_growth  = rudn_growth %>% select(id,ds,de) %>% mutate(rgr = ds-de)
-rudn_growth[is.na(rudn_growth)] = 0
-
-
-AllData = AllData %>% left_join(rudn_growth, by="id")
-AllData %>% filter(Site == "RUDN") %>% as.data.frame()
-TTR$dist[is.infinite(TTR$dist)] = NA
-gr_pred = TTR %>% filter(Site == "BOLOTNAYA",hour >20 | hour <6,  tair >20 , volt>4.05 ) %>% group_by(id, Species) %>%
-  summarise(b= lm(dist~doy, na.action = na.exclude)[[1]][2])
-
-AllData %>% filter(Site == "RUDN") %>% group_by(id, Species, VTA_score)%>% 
-  summarise(rgr=mean(rgr), DBH = mean(DBH), rgrdb = mean(rgr)/mean(DBH)) %>%
-  arrange(Species) %>% as.data.frame()
-
-ggplot(data = AllData %>% filter(Site == "BOLOTNAYA") %>%filter(Species != "TTR")%>% group_by(id, Species)%>% summarise(kg=mean(biomas_stored)))+
+#Total biomass stored per season
+ggplot(data = BLTN %>% filter(Site == "BOLOTNAYA") %>%filter(Species != "TTR")%>% group_by(id, Species)%>% summarise(kg=mean(biomas_stored)))+
   geom_col(aes( x = id,y = kg))+
   facet_wrap(~Species, ncol = 2, scale="free" )+
   #scale_y_continuous(limits=c(-.45,.5))+
   theme_bw()
 
-AllData$rgr
 
-ggplot(data = TTR %>% filter(Site == "BOLOTNAYA"))+
-  geom_point(aes(x=doy, y = detrend(dist), color = id ))+
-  #geom_line(aes(x=doy, y = dist, color = id ))+
-  geom_smooth(aes(x=doy,y=detrend(dist), color = id),method="lm" ,size=.1)+
-  facet_wrap(~Species,nrow = 3)+
-  scale_y_continuous(limits=c(-1,10))+
-  theme_bw()
+#Artificial graph of biomass growth according to accumulated LAI
+Bgr = Bdata %>%filter(Species != "TTR") %>% mutate(NDVIc =  replace(NDVIc, NDVIc > 1, 1) , NDVIc =  replace(NDVIc, NDVIc < -1, -1)) %>% 
+  group_by(id, Species,doy) %>%   summarise(bio_proxy = quantile(NDVIc, 0.85,na.rm = T), kg=mean(biomas_stored), n=n()) %>% 
+  mutate(bio_proxy = replace(bio_proxy,bio_proxy<0,0), bioproxy = cumsum(bio_proxy)) %>% 
+  mutate(biomas_stored = kg*bioproxy/max(bioproxy)) %>% filter(id != "218A0186")
 
-ggplot(data = Growth %>% filter(Site=="BOLOTNAYA"))+
-  geom_col(aes( x = id,y = growth, fill = Species ))+
-  #geom_line(aes(x=doy, y = dist, color = id ))+
-  #geom_smooth(aes(x=doy,y=detrend(dist), color = id),method="lm" ,size=.1)+
-  facet_wrap(~Species,ncol = 2, scale="free" )+
-  #scale_y_continuous(limits=c(-.45,.5))+
-  theme_bw()
+doy = rep(180:310,unique(Bgr$id)%>%length )
+id = rep(unique(Bgr$id), rep(311-180,unique(Bgr$id)%>%length))
+
+
+df = data.frame(id,doy) %>% left_join(Bgr, by=c("id","doy"))
+
+
+df$biomas = 0
+for( i in df$id %>% unique()){
+  biomas = df$biomas_stored[df$id == i]
+  Species = as.factor(df$Species[df$id == i])%>% levels
+  df$Species[df$id == i] = Species
+  print(biomas)
+  biomas = na.approx(biomas, x = index(biomas),  na.rm = T, maxgap = Inf)
+  print(biomas)
+  df$biomas[df$id == i] = biomas
+}
   
 
-  
-TTR$dist
+ggplot(data = df%>%filter(doy<300))+
+  geom_point(aes(x=doy, y=biomas,  group=id), shape=3,size=.5, alpha=4/10)+
+  geom_line(aes(x=doy, y=biomas,  group=id),size=.5)+
+  #geom_ma(aes(x=doy, y=biomas, color =id), n=3, linetype=1, size=1)+
+  facet_wrap(~Species, scales = "free")+
+  theme_bw()
+
+
 
 ##################################       LAI
 
 
+TTR = TTR %>% mutate( dTair = tair - TTair)
+
+TTR = TTR %>% filter(Site %in% c("BOLOTNAYA","TROITSK"))
+TTR = TTR %>% filter(Species != "TTR")
+TTR$LAIb[is.infinite(TTR$LAIb)] = NA
+# T dif
+
+LAI = Bdata%>% filter(Species != "TTR")
+LAI$LAIb[is.infinite(LAI$LAIb)] = NA
+LAI = LAI %>% mutate(lightness = TTR_450c+TTR_500c+TTR_550c+TTR_570c+TTR_600c+TTR_650c+TTR_610c+
+                       TTR_680c+TTR_730c+TTR_760c+TTR_810c+TTR_860c)
+LAI = LAI %>% mutate(blueness = TTR_450c+TTR_500c)
+LAI = LAI %>% mutate(blueness2 = (b_V_450+b_B_500)/(TTR_450+TTR_500c))
+-log(LAI$blueness2) %>% summary
+LAI = LAI %>% mutate(pPARic = TTR_450c*2.55+TTR_500c*.58+TTR_550c*.78+TTR_570c*.9+TTR_600c*.95+TTR_650c+
+                         TTR_680c*.8+TTR_730c*.2+TTR_760c*.05)
+LAI = LAI %>% mutate(pPARbc =  b_V_450c*2.55+b_B_500c*0.58+b_G_550c*0.78+b_Y_570c*0.9+b_O_600c*0.95+b_R_650c+
+                         b_S_680c*0.8+b_T_730c*0.2+b_U_760c*0.05)
+LAI = LAI %>% mutate(LAIparc = -log(pPARbc/pPARic)/3)
+LAI = LAI %>% mutate(pPARi = TTR_450*2.55+TTR_500*.58+TTR_550*.78+TTR_570*.9+TTR_600*.95+TTR_650+
+                       TTR_680*.8+TTR_730*.2+TTR_760*.05)
+LAI = LAI %>% mutate(pPARb =  b_V_450*20.55+b_B_500*0.58+b_G_550*0.78+b_Y_570*0.9+b_O_600*0.95+b_R_650+
+                       b_S_680*0.8+b_T_730*0.2+b_U_760*0.05)
+LAI = LAI %>% mutate(LAIpar = -log(pPARb/pPARi)/3)
+LAI = LAI %>% group_by(id)%>%mutate(nlightness = lightness /max(lightness, na.rm=T))
+LAI = LAI %>% mutate(qlightness = order(lightness) /n())
+
+#LAI = LAI %>% group_by( Species, id,doy)%>% summarise(b = mean(blueness2,na.rm=T),nl = max(nlightness,na.rm=T),
+#                                                      q = mean(qlightness,na.rm=T),LAImax = max(LAIpar, na.rm = T),
+#                                                        LAImin = min(LAIb,na.rm = T), LAImean = mean(LAIb, na.rm=T))
+
+LAI$LAIparc[!is.na(LAI$LAIparc) & LAI$TTR_450c<1000] = LAI$LAIparc[!is.na(LAI$LAIparc) & LAI$TTR_450c<1000]+2
+LAI$LAIparc[ LAI$hour != 13 ] = NA
+LAI = LAI %>% mutate(month = month(time))%>% group_by(month) %>%
+  mutate(se = sd(LAIparc, na.rm = T),m = mean(LAIparc, na.rm = T), ) %>% 
+  mutate(LAIparc = replace(LAIparc,LAIparc < m-se,NA))
+
+LAI = LAI %>% mutate(LAIparc = replace(LAIparc,doy >285 & LAIparc >1.9,0.5))
+LAI = LAI %>% mutate(LAIparc = replace(LAIparc,LAIparc < 0.1,0.5))
+
+
+# PAI dynamics
 
 ggplot(data = LAI)+
-  geom_point(aes(x=doy, y = LAImax, color = Species ))+
-  geom_line(aes(x=doy, y = LAImax, color = Species ))+
-  facet_wrap(~Site,nrow = 2)+
+  #geom_point(aes(x=doy, y = q, color = q ))+
+  geom_point(aes(x=time, y = LAIparc, color = id ))+
+  #geom_ma(aes(x=doy, y = LAIparc, color = nl ), n=7)+
+  geom_smooth(aes(x=time, y = LAIparc, color = id ), span=.1, se=F)+
+  #geom_point(aes(x=time, y = q, color = id ))+
+  #geom_line(aes(x=doy, y = LAImax, color = Species ))+
+  facet_wrap(~Species,nrow = 2)+
   theme_bw()
 
 
-ggplot(data = LAI %>% filter(Species %in% c("Tilia cordata","Betula pendula")))+
-  geom_point(aes(x=doy, y = LAImax, color = Site ))+
-  geom_line(aes(x=doy, y = LAImax, color = Site ))+
-  facet_wrap(~Species,nrow = 3)+
+# LAI, WAI per species
+PAI = LAI %>%group_by(id,Species) %>% summarise(PAI = mean(replace(LAIparc, doy>290,NA),na.rm=T), 
+            WAI =mean(replace(LAIparc, doy<290,NA),na.rm=T))%>% mutate(LAI = PAI -WAI) %>%
+            pivot_longer(cols = c("WAI","LAI"), names_to = "index_name", values_to = "index")%>% as.data.table()
+PAI[17,5] = 0.52
+PAI[18,5] = 2.8
+ggplot(data = PAI )+
+  geom_col(aes(x = id, y = index, fill = index_name))+
+  facet_wrap(~Species, scales = "free")+
   theme_bw()
 
 
+###################### Partciles absorption #############################
+ 
 
-ggplot(data = LAI)+
-  geom_point(aes(x=doy, y = LAImin, color = Species ))+
-  geom_line(aes(x=doy, y = LAImin, color = Species ))+
-  facet_wrap(~Site,nrow = 2)+
+Cpm <- read_delim("data/Moscow_center_pm25.csv", ";", escape_double = FALSE, 
+                    col_types = cols(time = col_datetime(format = "%d.%m.%Y %H:%M")), 
+                    trim_ws = TRUE)
+
+Cpm = Cpm %>% mutate(doy = yday(time),hour=hour(time)) # g10-6 m-3
+
+LAI = LAI %>% group_by(id,doy) %>% mutate(PAI = mean(LAIparc,na.rm=T)) %>%
+  left_join(Cpm, by = c("doy","hour")) %>% select(-time.y)
+
+LAI = LAI %>% left_join(PAI %>% filter(index_name == "WAI")%>% select(id,index), by ="id") %>%
+  rename(WAI  = index)
+
+for( i in LAI$id %>% unique()){
+  lai = LAI$PAI[LAI$id == i]
+  #Species = as.factor(LAI$Species[LAI$id == i])%>% levels
+  #df$Species[df$id == i] = Species
+  #print(biomas)
+  lai = na.approx(lai, x = index(lai),  na.rm = T, maxgap = Inf)
+  print(biomas)
+  LAI$PAI[LAI$id == i] = lai
+}
+
+Vdavg = 0.64
+Vdmin = 0.25
+Vdmax = 1
+LAIpm10 = 6
+
+LAI =  LAI %>% mutate(LAI = PAI-WAI) %>% 
+               mutate(V_avg = Vdavg*(PAI)/(WAI + LAIpm10)) %>%
+               mutate(V_min = Vdmin*(PAI)/(WAI + LAIpm10)) %>%
+               mutate(V_max = Vdmax*(PAI)/(WAI + LAIpm10)) %>%
+               mutate(P_avg =V_avg*pm10*0.036) %>%
+               mutate(P_min =V_min*pm10*0.036) %>%
+               mutate(P_max =V_max*pm10*0.036) %>% rename(time = time.x) # g m-3
+
+pm10 = LAI %>% group_by(id,doy, Species) %>% 
+  summarise(P_avg = sum(P_avg, na.rm = T)*1.5,P_min = sum(P_min, na.rm = T)*1.5,P_max = sum(P_max, na.rm = T)*1.5)
+
+ggplot(data = pm10)+
+  #geom_point(aes(x=doy, y = P_avg, color = id)) +
+  #geom_smooth(aes(x=doy, y = P_avg, color = id)) + 
+  geom_errorbar(aes(x=doy, y = P_avg,ymin=P_min,ymax=P_max, color = id), position = position_dodge(3))+
+  geom_smooth(aes(x=doy, y = P_avg, color = id), se =F, span=1)+
+  facet_wrap(~Species, scales = "free")+
   theme_bw()
 
+pm10sum = pm10 %>% group_by(id, Species) %>% 
+  summarise(P_max= sum(P_max,na.rm=T),P_avg= sum(P_avg,na.rm=T),P_min= sum(P_min,na.rm=T)) 
+  
 
-ggplot(data = LAI %>% filter(Species %in% c("Tilia cordata","Betula pendula")))+
-  geom_point(aes(x=doy, y = LAImin, color = Site ))+
-  geom_line(aes(x=doy, y = LAImin, color = Site ))+
-  facet_wrap(~Species,nrow = 3)+
+
+ggplot(data = pm10sum) +
+  geom_crossbar(aes(x=id,  y= P_avg,ymin=P_min,ymax=P_max, color=Species))+
+  facet_wrap(~Species, scales = "free")+
   theme_bw()
 
-
-
-ggplot(data = LAI)+
-  geom_point(aes(x=doy, y = LAImean, color = Species ))+
-  geom_line(aes(x=doy, y = LAImean, color = Species ))+
-  facet_wrap(~Site,nrow = 2)+
-  theme_bw()
-
-
-ggplot(data = LAI %>% filter(Species %in% c("Tilia cordata","Betula pendula")))+
-  geom_point(aes(x=doy, y = LAImean, color = Site ))+
-  geom_line(aes(x=doy, y = LAImean, color = Site ))+
-  facet_wrap(~Species,nrow = 3)+
-  theme_bw()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-TTR%>% group_by(id)%>%summarise(n = n()) %>% as.data.frame()
-
-TT285 =  TTR%>% filter(id == "218A0077")
-
-
-ggplot(data = TT285)+
-  geom_point(aes(x=time, y=LAIb))+
-  geom_line(aes(x=time, y=LAIb))
 

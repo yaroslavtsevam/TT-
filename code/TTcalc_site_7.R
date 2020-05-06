@@ -1,7 +1,8 @@
 # Developmen log
-# version 7
+# version 8
 # What is new
 
+# Recalculation of trunk temperatures according to battery voltage
 # Added BEFdata for central Russia species
 # Added LAI calculation according top Beer law
 # Corrected variable filtering according to it position, now filtered by name
@@ -19,6 +20,7 @@
 # RRR, E2, G2, C2, ff20, DBH, DTT, installation_height, X1, Site, minTd, meanTd, maxTd, step_time, corr_time, serv_cor, imported, rn, wrong_server,zone, SiteIndex, na.rm, datetime,  rec_num, PRI,PRI2, MCARI,recharge_flag, charge , cor_dt, MTCI,CIg,CIr,CRI1,CRI2,SIPI,PSSR,PSND,PSRI,CARI,EVI2,VARI, b_O_600,b_Y_570,b_G_550,b_B_500,b_V_450, b_R_610,source,id_rec, gx, gy, gz, serv_datetime, wrong_time,X,incr, type, b_R_650,b_W_860,b_V_810,b_U_760,b_T_730,b_S_680, NDVI,EVI,Nr,Rr,Br,Gr
 
 source("code//TT_graphs.R") 
+library(zoo)
 library(dtplyr)
 library(data.table)
 library(tidyverse)
@@ -107,10 +109,10 @@ TTBasicCalc = function(tdt, verboseFlag){
   tdt$psi   = atan(tdt$gy/(tdt$gx^2+tdt$gz^2)^0.5) /pi * 180
   tdt$phi   = atan(tdt$gz/(tdt$gy^2+tdt$gx^2)^0.5) /pi * 180
   #Temoerature probes
-  tdt$t1    = tdt$X5 /10
-  tdt$nt1   = tdt$X6 /10
-  tdt$t2    = tdt$X18/10
-  tdt$nt2   = tdt$X19/10
+  tdt$t1    = bandgap_t_correction(tdt$X5 /10, tdt$X8)
+  tdt$nt1   = bandgap_t_correction(tdt$X6 /10, tdt$X8)
+  tdt$t2    = bandgap_t_correction(tdt$X18/10, tdt$X8)
+  tdt$nt2   = bandgap_t_correction(tdt$X19/10, tdt$X8)
   
   mx= 119.639 - (0.0420 * (tdt$t1)) - (0.00761 * tdt$X20) 
   y0=-209.9931
@@ -1003,6 +1005,60 @@ TTcalc_site = function(server,
 
 }
 
+
+# Correcting temperatures according to voltage===============================
+#
+#
+#
+bandgap_t_correction = function(t_in_v, bandgap_v){
+  M = data.frame(t_in_v, bandgap_v)
+  
+    t_n = apply(M, 1, function(x) normalize_t(x))
+    return(t_n)
+  
+}
+normalize_t = function(row){
+  t_in = row[1]
+  bandgap=row[2]
+  lut = data.frame(t =c(100,99,98,97,96,95,94,93,92,91,90,89,88,87,86,85,84,83,82,81,80,
+                        79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,
+                        59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,
+                        39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,
+                        19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0,
+                        -1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12,-13,-14,-15,-16,-17,-18,-19,-20),
+                   bg = c( 1453,1488,1524,1560,1597,1636,1675,1716,1757,1800,1843,1888,1933,1980,
+                           2028,2077,2127,2179,2232,2287,2342,2400,2458,2519,2580,2644,2709,2775,
+                           2843,2913,2984,3057,3132,3208,3286,3366,3448,3531,3617,3705,3794,3887,
+                           3982,4079,4178,4279,4381,4486,4593,4703,4814,4927,5042,5159,5279,5400,
+                           5523,5649,5776,5905,6036,6168,6303,6439,6577,6716,6857,7000,7145,7290,
+                           7438,7586,7736,7887,8039,8192,8345,8499,8653,8808,8963,9119,9275,9431,
+                           9587,9743,9899,10054,10209,10363,10516,10669,10820,10970,11119,11267,
+                           11413,11558,11701,11842,11981,12119,12255,12389,12521,12651,12778,12903,
+                           13025,13146,13263,13378,13489,13599,13705,13809,13911,14009,14105,14199,14289)
+  )
+  if (is.na(t_in) | t_in >100 | t_in < -20 | is.na(bandgap)){ return(NA)} else { 
+    t_vector = ((floor(t_in)*10):(ceiling(t_in)*10))/10
+    g_vector = c(lut$bg[lut$t == floor(t_in)], rep(NA,9),lut$bg[lut$t == ceiling(t_in)])
+    
+    g_vector = zoo::na.approx(g_vector, x = zoo::index(g_vector),  na.rm = TRUE, maxgap = Inf)
+    g = g_vector[t_vector == t_in]
+    g_norm = g*43691/bandgap
+    
+    if(g_norm<1453){gn_start = 1453} else { gn_start = lut$bg[lut$bg < g_norm][length(lut$bg[lut$bg < g_norm])]}
+    if(g_norm>14289){gn_end = 14289} else { gn_end = lut$bg[lut$bg > g_norm][1]}
+    
+    gn_vector = c(gn_start, rep(NA,9),gn_end)
+    gn_vector = zoo::na.approx(gn_vector, x = zoo::index(gn_vector),  na.rm = TRUE, maxgap = Inf)
+    
+    tn_vector = ((lut$t[lut$bg == gn_start]*10):(lut$t[lut$bg == gn_end]*10))/10
+    tn = tn_vector[which.min(abs(gn_vector - g_norm))]
+    
+    return(tn)
+  }
+}
+
+
+
 #Adding Biomass calculation data ==============================================
 # Biomass calculated based on IPCC 2006 formula C = [V * D * BEF] * (1 + R) * CF
 # BCEF = BEF * D is taken from paper  doi:10.3390/f9060312 Dmitry Schepaschenko
@@ -1091,6 +1147,11 @@ TTR_add = function(data, verboseFlag){
     K = 5.2 # light extinction coefficient
     data = data %>% mutate(LAInir = -log((b_V_810c+b_W_860c)/(TTR_860c+TTR_810c))/K)
     data = data %>% mutate(LAIb = -log((b_V_450c+b_B_500c)/(TTR_450c+TTR_500c))/K)
+    data = data %>% mutate(pPARi = TTR_450*.55+TTR_500*.58+TTR_550*.78+TTR_570*.9+TTR_600*.95+TTR_650+
+                             TTR_680*.8+TTR_730*.2+TTR_760*.05)
+    data = data %>% mutate(pPARb =  b_V_450*0.55+b_B_500*0.58+b_G_550*0.78+b_Y_570*0.9+b_O_600*0.95+b_R_650+
+                             b_S_680*0.8+b_T_730*0.2+b_U_760*0.05)
+    data = data %>% mutate(LAIpar = -log(pPARb/pPARi))
     return(data)
   } else {
     
