@@ -30,7 +30,8 @@ BLTN  = AllData %>% filter(Site=="BOLOTNAYA")
 BLTN  = BLTN %>% BEFadd( verboseFlag =  "con")
 BLTN = BLTN %>% left_join(read_delim("data/Bolotnaya_growth.csv", delim=";"),by="id") 
 BLTN = BLTN %>% mutate(biomas_stored = pi*tree_height*1/3*(growth/1000)*(d/100+growth/1000) * C_V*1000)
-BLTN = BLTN %>% mutate(biomas_stored2 = pi*tree_height*1/3*(growth_2/1000)*(d/100+growth/1000) * C_V*1000)
+#Basal Area Increment = BAI = pi/4*((d/100)^2 -((d/100)-(growth)/1000)^2)
+BLTN = BLTN %>% mutate(biomas_stored2 = tree_height*0.5*pi/4*((d/100)^2-((d/100)-(growth/1000))^2)*C_V*1000)
 
 Moscow_center_weather_19 <- read_delim("data/Moscow_center_weather_19.csv",delim = ";",
                                        escape_double = FALSE, comment = "#", 
@@ -38,10 +39,10 @@ Moscow_center_weather_19 <- read_delim("data/Moscow_center_weather_19.csv",delim
   rename(time ="Местное время в Москве (центр, Балчуг)" ) %>%
   mutate(time = as_datetime(time,format = "%d.%m.%Y %H:%M"))
 #Calculating wind speed at height 20m
-MCW19 = Moscow_center_weather_19 %>% mutate(ff10 = Ff)
+#MCW19 = Moscow_center_weather_19 %>% mutate(ff10 = Ff)
 MCW19 = Moscow_center_weather_19 %>% mutate(ff20 = Ff*log(20/.6)/log(10/.6))
 
-MCW19 = MCW19 %>% select(time,"T",Po,U, ff10,ff20, RRR) %>% rename("sT" = "T") %>% rename("srh" = "U")
+MCW19 = MCW19 %>% select(time,"T",Po,U, Ff,ff20, RRR) %>% rename("sT" = "T") %>% rename("srh" = "U")
 MCW19$RRR = MCW19$RRR %>% as.numeric()
 MCW19$RRR[is.na(MCW19$RRR)] = 0
 MCW19 = MCW19 %>% arrange(time) %>% mutate(hour = hour(time))%>% as.data.frame()
@@ -108,7 +109,7 @@ Bdata = Bdata %>% group_by(id) %>% mutate(hour = hour(time_ts))
 Bdata = Bdata %>% group_by(id) %>% mutate(month = month(time_ts))
 Bdata = Bdata %>% group_by(id) %>% mutate(biomas_stored = mean(biomas_stored, na.rm=T))
 Bdata = Bdata %>% group_by(id) %>% mutate(Species = levels(as.factor(Species))[1])
-Bdata = Bdata %>% rename(canopy_area = caopy_area)
+#Bdata = Bdata %>% rename(canopy_area = caopy_area)
 #Aerodynamic resistance according to Tom and Eddy Pro
 
 Bdata = Bdata %>% mutate(r =log((20-20*0.67)/(20*.15))*log((20-20*0.67)/(20*.015))/(ff20_ts*0.41^2)) #3.698186 /ff20_ts
@@ -120,8 +121,8 @@ Bdata = Bdata %>% group_by(id, doy) %>% mutate(nt1 =
 Bdata = Bdata %>% mutate(nt1_ts = nt1)
 Bdata = Bdata %>% mutate(He = 1.006*1.202*(nt1_ts-TTair_ts)/(r)*canopy_area )
 Bdata = Bdata %>% mutate(Hw = 1.006*1.202*(nt1_ts-TTair_ts)/(r))
-Bdata = Bdata %>% group_by(id,doy,hour) %>% 
-  mutate(Hwt = calc.zeng(time_ts,nt1_ts,TTair_ts,ff20_ts,TTrh,Po,20,3.5,3.5)$ash) %>%  as.data.frame()
+#Bdata = Bdata %>% group_by(id,doy,hour) %>% 
+#  mutate(Hwt = calc.zeng(time_ts,nt1_ts,TTair_ts,ff20_ts,TTrh,Po,20,3.5,3.5)$ash) %>%  as.data.frame()
  
 Bdata = Bdata %>% group_by(id, doy) %>% mutate(Hwt = 
                                                  zoo::na.approx(Hwt, x = zoo::index(Hwt),  na.rm = F, maxgap = Inf)) %>% as.data.frame()
@@ -153,7 +154,7 @@ Bdata = Bdata %>% group_by(id) %>%
   
 #Bdata$He %>% is.na %>% which %>% length()
 
-Bdata = Bdata %>%  filter(Species != "TTR")
+Bdata = Bdata %>%  filter(Species != "TTR", id !="218A0088",id != "218A0193",id !="218A0248")
 #TTR  = AllData %>% filter(!is.na(TTair))
 
 
@@ -167,20 +168,22 @@ write.csv(file="dist.csv", ist)
 
 Tdif = Bdata %>% mutate( dTair = tair_ts - TTair_ts) %>% group_by(Site, Species, doy) %>% 
   summarise(dTairmax = max(dTair, na.rm = T), dTairmin = min(dTair,na.rm = T), dTairmean = mean(dTair, na.rm=T))
-Bdata = Bdata %>% mutate( dTair = tair_ts - TTair_ts)
+Bdata = Bdata %>% mutate( dTair_ts = tair_ts - TTair_ts)%>% mutate( dTair = tair - TTair) %>% mutate(gap = cumsum(!is.na(dTair)))
 
 
 
 # Example of couple of days timeseries
 Sys.setlocale("LC_ALL","English")
-g1 = ggplot(data=Bdata %>% filter(doy>222 & doy <229, Species != "TTR", id !="218A0248",id !="218A0248" ), aes(x = time, y = dTair))+
+g1 = ggplot(data=Bdata %>% filter(doy>222 & doy <229) , aes(x = time, y = dTair))+
   geom_point(aes(color=Species))+
-  #geom_line(aes(color=id, group = id))+
+  #geom_line(aes(color=id, group = gap))+
   geom_ma( aes(group =id, color = Species), n=3,size=.4,)+
   geom_ma(data = MCW19 %>% mutate(doy = yday(time)) %>% filter(doy>222 & doy <229),
           aes( x = time, y = sT-20),color ="black",linetype="42",size=1,alpha=.4, n=3)+
-  geom_hline(aes(yintercept = 0))+
-  scale_y_continuous(sec.axis =  sec_axis(~ . + 20, name = expression(T[air]~","~{C}^o)),limits=c(-7,5))+
+    #geom_ma(data = Bdata %>% filter(doy>222 & doy <229) %>% group_by(time_ts) %>% summarise(sT = mean(sT, na.rm = T)),
+  #        aes( x = time_ts, y = sT-20),color ="black",linetype="42",size=1,alpha=.4, n=3)+
+    geom_hline(aes(yintercept = 0))+
+    scale_y_continuous(sec.axis =  sec_axis(~ . + 20, name = expression(T[air]~","~{C}^o)),limits=c(-7,5))+
   scale_x_continuous(n.breaks = 7, trans="time")+
   facet_wrap(~Species, nrow = 2)+
   theme_bw()+
@@ -220,13 +223,19 @@ Bdiurnal  = Bdata %>%  filter(Species != "TTR") %>%
 Bdiurnal$hour[ceiling((Bdiurnal$hour-1)/3) == (Bdiurnal$hour-1)/3 ] =
   Bdiurnal$hour[ceiling((Bdiurnal$hour-1)/3) == (Bdiurnal$hour-1)/3 ]+.5  
 
-g2 = ggplot(data = Bdiurnal)+
+
+
+#blank_data <- data.frame(month = c(7, 7, 8, 8, 9, 9, 10,10), x = 0, y = c(-3, 2, -3, 2, -3, 5,))
+
+
+g2 = ggplot(data = Bdiurnal %>% filter(dT <5))+
   geom_point(aes(x = hour, y = dT, color = Species), position = position_dodge(width = 1) )+
   geom_smooth(aes(x = hour, y = dT, color = Species, group = Species), se = F, span=0.8)+
   geom_errorbar(aes(x=hour, ymin = dT-sdT,ymax=dT+sdT, color = Species),linetype="dashed", 
                 position = position_dodge(width = 1))+
   geom_hline(aes(yintercept=0))+
-  facet_wrap(~month, nrow=2, scales = "free")+
+
+  facet_wrap(~month, nrow=2, scales = "fixed")+
   theme_bw()+
   theme(legend.position = "bottom",legend.title = element_blank(), 
         legend.text=element_text(size=12),
@@ -292,7 +301,7 @@ g4 = ggplot(data = Bdiurnal)+
   geom_errorbar(aes(x=hour, ymin = dRh-sdRh,ymax=dRh+sdRh, color = Species),linetype="dashed", 
                   position = position_dodge(width = 1))+
   geom_hline(aes(yintercept=0))+
-  facet_wrap(~month, nrow=2, scales = "free")+
+  facet_wrap(~month, nrow=2, scales = "fixed")+
   theme_bw()+
   theme(legend.position = "bottom",legend.title = element_blank(), 
       legend.text=element_text(size=14),
@@ -393,7 +402,7 @@ g52 = ggplot(data=Bdata %>% filter(doy>203 & doy <210, Species != "TTR", id !="2
   geom_point(aes(color=id), shape=4, size=.5)+
   #geom_line(aes(color=id, group = id))+
   geom_ma( aes(group =id, color = id), n=3,size=.4,span=1)+
-  geom_line(data = VPD, aes( x = time, y = VPD*3),color ="black", linetype="42", size=1, alpha=.4 )+
+  geom_line(data = VPD, aes( x = time, y = VPD*3),color ="black", size=1, alpha=.4 )+
   geom_hline(aes(yintercept = 0))+
   scale_y_continuous(sec.axis =  sec_axis(~ . *3, name = expression(VPD~","~kPa)),limits=c(-0.5,5))+
   scale_x_continuous(n.breaks = 7, trans="time")+
@@ -610,7 +619,7 @@ ggplot(data = BLTN %>% filter(Site == "BOLOTNAYA") %>%filter(Species != "TTR")%>
 
 
 #Artificial graph of biomass growth according to accumulated LAI
-Bgr = Bdats %>% filter(Species != "TTR")  %>% filter(!(id %in% c("218A0088","218A0193","218A0248"))) %>% 
+Bgr = Bdata %>% filter(Species != "TTR")  %>% filter(!(id %in% c("218A0088","218A0193","218A0248"))) %>% 
   mutate(NDVIts =  replace(NDVIts, NDVIts > 1, 1) , NDVIts =  replace(NDVIts, NDVIts < -1, -1)) %>% 
   group_by(id, Species,doy) %>%   summarise(bio_proxy = quantile(NDVIts, 0.85,na.rm = T), kg=mean(biomas_stored), n=n()) %>% 
   mutate(bio_proxy = replace(bio_proxy,bio_proxy<0,0), bioproxy = cumsum(bio_proxy)) %>% 
@@ -652,6 +661,49 @@ g8 = ggplot(data = df%>%filter(doy<300))+
 ggsave(plot = g8, filename = "results/es/Carbon_accumulation_per_tree_ts.png", 
        width = 16, height =12, units = "in", dpi = 100, device ="png")
 
+
+
+Bgr2 = Bdata %>% filter(Species != "TTR")  %>% filter(!(id %in% c("218A0088","218A0193","218A0248"))) %>% 
+  mutate(NDVIts =  replace(NDVIts, NDVIts > 1, 1) , NDVIts =  replace(NDVIts, NDVIts < -1, -1)) %>% 
+  group_by(id, Species,doy) %>%   summarise(bio_proxy = quantile(NDVIts, 0.85,na.rm = T), kg=mean(biomas_stored2, na.rm = T), n=n()) %>% 
+  mutate(bio_proxy = replace(bio_proxy,bio_proxy<0,0), bioproxy = cumsum(bio_proxy)) %>% 
+  mutate(biomas_stored = kg*bioproxy/max(bioproxy)) 
+
+doy = rep(180:310,unique(Bgr2$id)%>%length )
+id = rep(unique(Bgr2$id), rep(311-180,unique(Bgr2$id)%>%length))
+
+
+df = data.frame(id,doy) %>% left_join(Bgr2, by=c("id","doy"))
+
+
+df$biomas = 0
+for( i in df$id %>% unique()){
+  biomas = df$biomas_stored[df$id == i]
+  Species = as.factor(df$Species[df$id == i])%>% levels
+  df$Species[df$id == i] = Species
+  #print(biomas)
+  biomas = zoo::na.approx(biomas, x = zoo::index(biomas),  na.rm = T, maxgap = Inf)
+  #print(biomas)
+  df$biomas[df$id == i] = biomas
+}
+
+
+g82 = ggplot(data = df%>%filter(doy<300))+
+  geom_point(aes(x=doy, y=biomas,  group=id),shape =3, size=1.2, alpha=4/10)+
+  geom_line(aes(x=doy, y=biomas, group=id, color=id),size=.5)+
+  #geom_ma(aes(x=doy, y=biomas, color =id), n=3, linetype=1, size=1)+
+  facet_wrap(~Species, scales = "free")+
+  theme_bw()+
+  theme(legend.position = "none")+
+  theme(legend.position = "bottom",legend.title = element_blank(), 
+        legend.text=element_text(size=14),
+        axis.text=element_text(size=12),
+        axis.title=element_text(size=16,face="bold"),
+        strip.text.x = element_text(size = 14))+
+  xlab(expression(Day~of~the~ year))+
+  ylab(expression(C[tree]~","~kg))+guides(colour = guide_legend(nrow = 2))
+ggsave(plot = g82, filename = "results/es/Carbon_accumulation_per_tree_ts_SHARP.png", 
+       width = 16, height =12, units = "in", dpi = 100, device ="png")
 
 ##################################       LAI
 
@@ -929,8 +981,8 @@ Benrsum = Bsum %>% group_by(id,Species) %>% summarise(E=sum(E))
 
 
 
-Bcarbsum = BLTN %>% filter(Site == "BOLOTNAYA") %>%filter(Species != "TTR")%>% 
-  group_by(id, Species)%>% summarise(Cstored=mean(biomas_stored))
+Bcarbsum = Bdata %>% filter(Site == "BOLOTNAYA") %>%filter(Species != "TTR")%>% 
+  group_by(id, Species)%>% summarise(Cstored=mean(biomas_stored2), ca = mean(canopy_area), Cm2 = Cstored/ca)
                                      
 
 Bpaisum = LAI %>%group_by(id,Species) %>% summarise(PAI = mean(replace(LAIparc, doy>290,NA),na.rm=T), 
