@@ -409,3 +409,74 @@ ggplot(data = pm10sum) +
   theme_bw()
 
 
+
+
+###### Final corrplot
+
+summary(LAI)
+names(LAI)%>% sort
+
+cordata_d = LAI %>% ungroup %>% mutate(age = case_when(
+  id== "218A0077" ~ 55,
+  id== "218A0212" ~ 55,
+  id== "218A0255" ~ 55,
+  id== "218A0262" ~ 55,
+  id== "218A0281" ~ 55,
+  id== "218A0104" ~ 30,
+  id== "218A0210" ~ 30,
+  id== "218A0285" ~ 30,
+  id== "218A0079" ~ 90,
+  id== "218A0138" ~ 90,
+  id== "218A0277" ~ 90,
+  id== "218A0121" ~ 55,
+  id== "218A0111" ~ 55,
+  id== "218A0153" ~ 45,
+  id== "218A0186" ~ 45,
+  id== "218A0270" ~ 35 ))  %>%
+  select(biomas_stored,id,doy, canopy_area,d,PAI,VPD, tair, VTA_score,VPD,week,tree_height,LAI,P_avg,Flux, month, age) %>% 
+  filter(month <10) %>% group_by(doy,id) %>% summarise(
+    "Biomas stored" = mean(biomas_stored, na.rm = T),W
+    "Canopy area" = mean(canopy_area, na.rm = T),
+    Diameter = mean(d, na.rm = T),
+    VTA = mean(VTA_score, na.rm = T),
+    Height = mean(tree_height, na.rm = T),
+    LAI = mean(LAI, na.rm = T),
+    PAI = mean(PAI, na.rm = T),
+    PM10 = meWan(P_avg, na.rm = T),
+    Transpiration = mean(Flux, na.rm = T),
+    "Transpiration / canopy area" = mean(Flux/canopy_area, na.rm = T),
+    VPD = mean(VPD, na.rm = T),
+    Tair = mean(tair, na.rm = T),
+    Age = mean(age, na.rm = T)
+    )
+
+cordata = cordata_d %>% ungroup()%>% select(-doy) %>% group_by(id) %>% summarise(
+  "Biomas stored" = mean(`Biomas stored`, na.rm = T),
+  "Canopy area" = mean(`Canopy area`, na.rm = T),
+  Diameter = mean(Diameter, na.rm = T),
+  VTA = mean(VTA, na.rm = T),
+  Height = mean( Height , na.rm = T),
+  LAI = mean(LAI, na.rm = T),
+  PAI = mean(PAI, na.rm = T),
+  PM10 = sum(PM10, na.rm = T),
+  Transpiration = sum(Transpiration, na.rm = T),
+  "Transpiration / canopy area" = mean("Transpiration / canopy area", na.rm = T),
+  VPD = mean(VPD, na.rm = T),
+  Tair = mean(Tair, na.rm = T),
+  Age = mean(Age, na.rm = T)
+)%>% select(-id)
+
+cordata_d = cordata_d %>%ungroup()%>% select(-id, -doy)
+
+
+res <- rcorr(as.matrix(cordata_d))
+res2 <- rcorr(as.matrix(cordata))
+
+corrplot(res2$r, type="upper", order="hclust", 
+         p.mat = res2$P, sig.level = 0.01, insig = "blank")
+
+corrplot(res2$r^2,p.mat = res2$P,  insig = "blank", pch.cex = 1,cl.pos = "n",cl.ratio = .1, sig.level = 0.05,
+         order = "hclust",method = "number",cl.align.text="r" ) 
+
+corrplot(res$r,p.mat = res$P, order = "hclust",method = "number", sig.level = 0.05, insig = "blank", 
+         cl.pos = "n",cl.ratio = .1, cl.align.text="r" ) 

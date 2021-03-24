@@ -53,6 +53,13 @@ AllData$insite_load[AllData$id %in% low_in_site_load_TTlist] = "low"
 AllData$insite_load_score[AllData$id %in% low_in_site_load_TTlist] = 1
 
 
+AllData$insite_load  = case_when(
+  AllData$in_site_antrop_load == "High" ~ "Высокий",
+  AllData$in_site_antrop_load == "Low" ~ "Низкий"
+)
+
+AllData$VTAscore = AllData$VTA_score
+
 ########################### Correcting species names ####################################
 
 AllData$Species[AllData$Species == "Acer platanoides "] = "Acer platanoides"

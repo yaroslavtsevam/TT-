@@ -1,0 +1,3218 @@
+No sync today - downloading file 
+
+http://naturetalkers.altervista.org/C18A0230/ttcloud.txtdata read.
+
+No sync today - downloading file 
+
+http://naturetalkers.altervista.org/C1850003/ttcloud.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 16739x21
+
+Voltage and proximity sensor 
+
+
+Table had 7241 rows, found 402 rows to be removed.
+
+6853
+
+
+6839
+Basic calc and duplicate removal finished 
+
+Sorted by server time 
+
+Import flag variable added 
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 21880201
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 0correct times 0
+
+Charge:1 step time:3600, correct dates found0
+
+Starting data extrapolation 
+
+Starting time correction for 21880202
+
+Found 2recharges
+
+So, charges states are123
+
+Correct dates 115correct times 115
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found115
+
+Found measurements with correct timestemp:114
+
+21880202 charge 1was filled
+
+Correct dates 415correct times 415
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found415
+
+Found measurements with correct timestemp:414
+
+21880202 charge 2was filled
+
+Correct dates 473correct times 473
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:3 step time:5400, correct dates found473
+
+Found measurements with correct timestemp:472
+
+21880202 charge 3was filled
+
+Starting data extrapolation 
+
+Starting time correction for 21880203
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 56correct times 56
+
+Estimated step time is 13200
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found56
+
+Found measurements with correct timestemp:56
+
+21880203 charge 1was filled
+
+Correct dates 0correct times 0
+
+Charge:2 step time:3600, correct dates found0
+
+Starting data extrapolation 
+
+Starting time correction for 21880205
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 531correct times 531
+
+Estimated step time is 5600
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found531
+
+Found measurements with correct timestemp:530
+
+21880205 charge 1was filled
+
+Correct dates 474correct times 474
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found474
+
+Found measurements with correct timestemp:473
+
+21880205 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 21880209
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 252correct times 252
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found252
+
+Found measurements with correct timestemp:251
+
+21880209 charge 1was filled
+
+Starting data extrapolation 
+
+Starting time correction for 21880210
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 1005correct times 1005
+
+Estimated step time is 5600
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found1005
+
+Found measurements with correct timestemp:1004
+
+21880210 charge 1was filled
+
+Starting data extrapolation 
+
+Starting time correction for 21880212
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 26correct times 26
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found26
+
+Found measurements with correct timestemp:26
+
+21880212 charge 1was filled
+
+Correct dates 0correct times 0
+
+Charge:2 step time:3600, correct dates found0
+
+Starting data extrapolation 
+
+Starting time correction for 21880214
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 55correct times 55
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found55
+
+Found measurements with correct timestemp:55
+
+21880214 charge 1was filled
+
+Correct dates 0correct times 0
+
+Charge:2 step time:3600, correct dates found0
+
+Starting data extrapolation 
+
+Starting time correction for 21880216
+
+Found 2recharges
+
+So, charges states are123
+
+Correct dates 115correct times 115
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found115
+
+Found measurements with correct timestemp:114
+
+21880216 charge 1was filled
+
+Correct dates 416correct times 416
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found416
+
+Found measurements with correct timestemp:415
+
+21880216 charge 2was filled
+
+Correct dates 315correct times 315
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:3 step time:5400, correct dates found315
+
+Found measurements with correct timestemp:314
+
+21880216 charge 3was filled
+
+Starting data extrapolation 
+
+Starting data extrapolation 
+
+Starting time correction for 21880219
+
+Found 2recharges
+
+So, charges states are123
+
+Correct dates 110correct times 110
+
+Estimated step time is 5700
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found110
+
+Found measurements with correct timestemp:109
+
+21880219 charge 1was filled
+
+Correct dates 407correct times 407
+
+Estimated step time is 5500
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found407
+
+Found measurements with correct timestemp:406
+
+21880219 charge 2was filled
+
+Correct dates 467correct times 467
+
+Estimated step time is 5500
+ will be used step time 5400
+
+Charge:3 step time:5400, correct dates found467
+
+Found measurements with correct timestemp:466
+
+21880219 charge 3was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0195
+
+Found 2recharges
+
+So, charges states are123
+
+Correct dates 115correct times 115
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found115
+
+Found measurements with correct timestemp:114
+
+218A0195 charge 1was filled
+
+Correct dates 417correct times 417
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found417
+
+Found measurements with correct timestemp:416
+
+218A0195 charge 2was filled
+
+Correct dates 472correct times 472
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:3 step time:5400, correct dates found472
+
+Found measurements with correct timestemp:471
+
+218A0195 charge 3was filled
+
+Starting correction of extrapolated dates 
+
+TT 21880201 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:3600, correct dates found0
+
+TT 21880202 fixing wrong corrections
+
+Found 1 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found114
+
+Found measurements with correct timestamp:113
+
+21880202 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+Nothing to correct in 3 charge, skipping
+
+TT 21880203 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:3600, correct dates found113
+
+Found measurements with correct timestamp:113
+
+21880203 charge 1was filled
+
+Charge:2 step time:3600, correct dates found0
+
+TT 21880205 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 21880209 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 21880210 fixing wrong corrections
+
+Found 1 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:0, correct dates found1004
+
+Found measurements with correct timestamp:1003
+
+21880210 charge 1was filled
+
+TT 21880212 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:3600, correct dates found31
+
+Found measurements with correct timestamp:31
+
+21880212 charge 1was filled
+
+Charge:2 step time:3600, correct dates found0
+
+TT 21880214 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:3600, correct dates found112
+
+Found measurements with correct timestamp:112
+
+21880214 charge 1was filled
+
+Charge:2 step time:3600, correct dates found0
+
+TT 21880216 fixing wrong corrections
+
+Found 1 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found114
+
+Found measurements with correct timestamp:113
+
+21880216 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+Nothing to correct in 3 charge, skipping
+
+TT 21880217 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:NA, correct dates found0
+
+TT 21880219 fixing wrong corrections
+
+Found 1 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found109
+
+Found measurements with correct timestamp:108
+
+21880219 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+Nothing to correct in 3 charge, skipping
+
+TT 218A0195 fixing wrong corrections
+
+Found 1 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found114
+
+Found measurements with correct timestamp:113
+
+218A0195 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+Nothing to correct in 3 charge, skipping
+
+Starting correct_time_ts_shift_matching of extrapolated dates 
+
+Starting correct_time_ts_shift_matching 
+
+Starting  correct_extrap_date inside correct_time_ts_shift_matching 
+
+TT 21880201 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 21880202 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found114
+
+Found measurements with correct timestamp:113
+
+21880202 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+Nothing to correct in 3 charge, skipping
+
+TT 21880203 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:3600, correct dates found113
+
+Found measurements with correct timestamp:113
+
+21880203 charge 1was filled
+
+Charge:2 step time:3600, correct dates found0
+
+TT 21880205 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 21880209 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 21880210 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:0, correct dates found1004
+
+Found measurements with correct timestamp:1003
+
+21880210 charge 1was filled
+
+TT 21880212 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:3600, correct dates found31
+
+Found measurements with correct timestamp:31
+
+21880212 charge 1was filled
+
+Charge:2 step time:3600, correct dates found0
+
+TT 21880214 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:3600, correct dates found112
+
+Found measurements with correct timestamp:112
+
+21880214 charge 1was filled
+
+Charge:2 step time:3600, correct dates found0
+
+TT 21880216 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found114
+
+Found measurements with correct timestamp:113
+
+21880216 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+Nothing to correct in 3 charge, skipping
+
+TT 21880217 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:NA, correct dates found0
+
+TT 21880219 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found109
+
+Found measurements with correct timestamp:108
+
+21880219 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+Nothing to correct in 3 charge, skipping
+
+TT 218A0195 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found114
+
+Found measurements with correct timestamp:113
+
+218A0195 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+Nothing to correct in 3 charge, skipping
+
+Stopped correct_time_ts_shift_matching 
+
+Starting site TTR data calculation 
+
+Looks like your site dont have TTR, returning data without change 
+
+No sync today - downloading file 
+
+http://naturetalkers.altervista.org/C1880221/ttcloud.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 36396x21
+
+Voltage and proximity sensor 
+
+
+Table had 17253 rows, found 927 rows to be removed.
+
+16327
+
+
+16326
+Basic calc and duplicate removal finished 
+
+Sorted by server time 
+
+Import flag variable added 
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 218A0001
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0001 charge 1was filled
+
+Correct dates 374correct times 374
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found374
+
+Found measurements with correct timestemp:373
+
+218A0001 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0078
+
+Found 2recharges
+
+So, charges states are123
+
+Correct dates 412correct times 412
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found412
+
+Found measurements with correct timestemp:411
+
+218A0078 charge 1was filled
+
+Correct dates 284correct times 284
+
+Estimated step time is 5700
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found284
+
+Found measurements with correct timestemp:283
+
+218A0078 charge 2was filled
+
+Correct dates 584correct times 584
+
+Estimated step time is 5800
+ will be used step time 5400
+
+Charge:3 step time:5400, correct dates found584
+
+Found measurements with correct timestemp:583
+
+218A0078 charge 3was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0092
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 429correct times 429
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found429
+
+Found measurements with correct timestemp:428
+
+218A0092 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0092 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0152
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 656correct times 656
+
+Estimated step time is 7100
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found656
+
+Found measurements with correct timestemp:655
+
+218A0152 charge 1was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0157
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 429correct times 429
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found429
+
+Found measurements with correct timestemp:428
+
+218A0157 charge 1was filled
+
+Correct dates 128correct times 128
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found128
+
+Found measurements with correct timestemp:127
+
+218A0157 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0201
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0201 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0201 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0211
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0211 charge 1was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0215
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 428correct times 428
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found428
+
+Found measurements with correct timestemp:427
+
+218A0215 charge 1was filled
+
+Correct dates 622correct times 622
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found622
+
+Found measurements with correct timestemp:621
+
+218A0215 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0225
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0225 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0225 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0232
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 428correct times 428
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found428
+
+Found measurements with correct timestemp:427
+
+218A0232 charge 1was filled
+
+Correct dates 150correct times 150
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found150
+
+Found measurements with correct timestemp:149
+
+218A0232 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0241
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 145correct times 145
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found145
+
+Found measurements with correct timestemp:144
+
+218A0241 charge 1was filled
+
+Correct dates 551correct times 551
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found551
+
+Found measurements with correct timestemp:550
+
+218A0241 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0252
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0252 charge 1was filled
+
+Correct dates 621correct times 621
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found621
+
+Found measurements with correct timestemp:620
+
+218A0252 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0254
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 429correct times 429
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found429
+
+Found measurements with correct timestemp:428
+
+218A0254 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0254 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0271
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 422correct times 422
+
+Estimated step time is 5500
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found422
+
+Found measurements with correct timestemp:421
+
+218A0271 charge 1was filled
+
+Correct dates 430correct times 430
+
+Estimated step time is 5500
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0271 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0272
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0272 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0272 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0278
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 429correct times 429
+
+Estimated step time is 6500
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found429
+
+Found measurements with correct timestemp:428
+
+218A0278 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0278 charge 2was filled
+
+Starting correction of extrapolated dates 
+
+TT 218A0001 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0078 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Charge:2 step time:5400, correct dates found284
+
+Filling backward
+
+Found measurements with correct timestamp:283
+
+218A0078 charge 2was filled
+
+Nothing to correct in 3 charge, skipping
+
+TT 218A0092 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0152 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 218A0157 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0201 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0211 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 218A0215 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0225 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0232 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0241 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Charge:2 step time:5400, correct dates found551
+
+Filling backward
+
+Found measurements with correct timestamp:550
+
+218A0241 charge 2was filled
+
+TT 218A0252 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestamp:429
+
+218A0252 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0254 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0271 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found422
+
+Filling backward
+
+Found measurements with correct timestamp:421
+
+218A0271 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0272 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0278 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+Starting correct_time_ts_shift_matching of extrapolated dates 
+
+Starting correct_time_ts_shift_matching 
+
+Starting  correct_extrap_date inside correct_time_ts_shift_matching 
+
+TT 218A0001 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0078 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+Nothing to correct in 3 charge, skipping
+
+TT 218A0092 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0152 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 218A0157 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0201 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0211 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 218A0215 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0225 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0232 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0241 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0252 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestamp:429
+
+218A0252 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0254 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0271 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0272 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0278 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+Stopped correct_time_ts_shift_matching 
+
+Starting site TTR data calculation 
+
+Sync was done today, no download 
+
+http://naturetalkers.altervista.org/C1880221/ttcloud.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 36396x21
+
+Voltage and proximity sensor 
+
+
+Table had 17253 rows, found 927 rows to be removed.
+
+16327
+
+
+16326
+Basic calc and duplicate removal finished 
+
+Sorted by server time 
+
+Import flag variable added 
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 218A0001
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0001 charge 1was filled
+
+Correct dates 374correct times 374
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found374
+
+Found measurements with correct timestemp:373
+
+218A0001 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0078
+
+Found 2recharges
+
+So, charges states are123
+
+Correct dates 412correct times 412
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found412
+
+Found measurements with correct timestemp:411
+
+218A0078 charge 1was filled
+
+Correct dates 284correct times 284
+
+Estimated step time is 5700
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found284
+
+Found measurements with correct timestemp:283
+
+218A0078 charge 2was filled
+
+Correct dates 584correct times 584
+
+Estimated step time is 5800
+ will be used step time 5400
+
+Charge:3 step time:5400, correct dates found584
+
+Found measurements with correct timestemp:583
+
+218A0078 charge 3was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0092
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 429correct times 429
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found429
+
+Found measurements with correct timestemp:428
+
+218A0092 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0092 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0152
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 656correct times 656
+
+Estimated step time is 7100
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found656
+
+Found measurements with correct timestemp:655
+
+218A0152 charge 1was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0157
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 429correct times 429
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found429
+
+Found measurements with correct timestemp:428
+
+218A0157 charge 1was filled
+
+Correct dates 128correct times 128
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found128
+
+Found measurements with correct timestemp:127
+
+218A0157 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0201
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0201 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0201 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0211
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0211 charge 1was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0215
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 428correct times 428
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found428
+
+Found measurements with correct timestemp:427
+
+218A0215 charge 1was filled
+
+Correct dates 622correct times 622
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found622
+
+Found measurements with correct timestemp:621
+
+218A0215 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0225
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0225 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0225 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0232
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 428correct times 428
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found428
+
+Found measurements with correct timestemp:427
+
+218A0232 charge 1was filled
+
+Correct dates 150correct times 150
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found150
+
+Found measurements with correct timestemp:149
+
+218A0232 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0241
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 145correct times 145
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found145
+
+Found measurements with correct timestemp:144
+
+218A0241 charge 1was filled
+
+Correct dates 551correct times 551
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found551
+
+Found measurements with correct timestemp:550
+
+218A0241 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0252
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0252 charge 1was filled
+
+Correct dates 621correct times 621
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found621
+
+Found measurements with correct timestemp:620
+
+218A0252 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0254
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 429correct times 429
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found429
+
+Found measurements with correct timestemp:428
+
+218A0254 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0254 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0271
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 422correct times 422
+
+Estimated step time is 5500
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found422
+
+Found measurements with correct timestemp:421
+
+218A0271 charge 1was filled
+
+Correct dates 430correct times 430
+
+Estimated step time is 5500
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0271 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0272
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0272 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0272 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0278
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 429correct times 429
+
+Estimated step time is 6500
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found429
+
+Found measurements with correct timestemp:428
+
+218A0278 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0278 charge 2was filled
+
+Starting correction of extrapolated dates 
+
+TT 218A0001 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0078 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Charge:2 step time:5400, correct dates found284
+
+Filling backward
+
+Found measurements with correct timestamp:283
+
+218A0078 charge 2was filled
+
+Nothing to correct in 3 charge, skipping
+
+TT 218A0092 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0152 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 218A0157 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0201 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0211 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 218A0215 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0225 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0232 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0241 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Charge:2 step time:5400, correct dates found551
+
+Filling backward
+
+Found measurements with correct timestamp:550
+
+218A0241 charge 2was filled
+
+TT 218A0252 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestamp:429
+
+218A0252 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0254 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0271 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found422
+
+Filling backward
+
+Found measurements with correct timestamp:421
+
+218A0271 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0272 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0278 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+Starting correct_time_ts_shift_matching of extrapolated dates 
+
+Starting correct_time_ts_shift_matching 
+
+Starting  correct_extrap_date inside correct_time_ts_shift_matching 
+
+TT 218A0001 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0078 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+Nothing to correct in 3 charge, skipping
+
+TT 218A0092 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0152 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 218A0157 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0201 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0211 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 218A0215 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0225 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0232 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0241 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0252 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestamp:429
+
+218A0252 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0254 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0271 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0272 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0278 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+Stopped correct_time_ts_shift_matching 
+
+Adding growth assesment 
+
+Sync was done today, no download 
+
+http://naturetalkers.altervista.org/C1880221/ttcloud.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 36396x21
+
+Voltage and proximity sensor 
+
+
+Table had 17253 rows, found 927 rows to be removed.
+
+16327
+
+
+16326
+Basic calc and duplicate removal finished 
+
+Sorted by server time 
+
+Import flag variable added 
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 218A0001
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0001 charge 1was filled
+
+Correct dates 374correct times 374
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found374
+
+Found measurements with correct timestemp:373
+
+218A0001 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0078
+
+Found 2recharges
+
+So, charges states are123
+
+Correct dates 412correct times 412
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found412
+
+Found measurements with correct timestemp:411
+
+218A0078 charge 1was filled
+
+Correct dates 284correct times 284
+
+Estimated step time is 5700
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found284
+
+Found measurements with correct timestemp:283
+
+218A0078 charge 2was filled
+
+Correct dates 584correct times 584
+
+Estimated step time is 5800
+ will be used step time 5400
+
+Charge:3 step time:5400, correct dates found584
+
+Found measurements with correct timestemp:583
+
+218A0078 charge 3was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0092
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 429correct times 429
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found429
+
+Found measurements with correct timestemp:428
+
+218A0092 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0092 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0152
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 656correct times 656
+
+Estimated step time is 7100
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found656
+
+Found measurements with correct timestemp:655
+
+218A0152 charge 1was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0157
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 429correct times 429
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found429
+
+Found measurements with correct timestemp:428
+
+218A0157 charge 1was filled
+
+Correct dates 128correct times 128
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found128
+
+Found measurements with correct timestemp:127
+
+218A0157 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0201
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0201 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0201 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0211
+
+Found 0recharges
+
+So, charges states are1
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0211 charge 1was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0215
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 428correct times 428
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found428
+
+Found measurements with correct timestemp:427
+
+218A0215 charge 1was filled
+
+Correct dates 622correct times 622
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found622
+
+Found measurements with correct timestemp:621
+
+218A0215 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0225
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0225 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0225 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0232
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 428correct times 428
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found428
+
+Found measurements with correct timestemp:427
+
+218A0232 charge 1was filled
+
+Correct dates 150correct times 150
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found150
+
+Found measurements with correct timestemp:149
+
+218A0232 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0241
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 145correct times 145
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found145
+
+Found measurements with correct timestemp:144
+
+218A0241 charge 1was filled
+
+Correct dates 551correct times 551
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found551
+
+Found measurements with correct timestemp:550
+
+218A0241 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0252
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0252 charge 1was filled
+
+Correct dates 621correct times 621
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found621
+
+Found measurements with correct timestemp:620
+
+218A0252 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0254
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 429correct times 429
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found429
+
+Found measurements with correct timestemp:428
+
+218A0254 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0254 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0271
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 422correct times 422
+
+Estimated step time is 5500
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found422
+
+Found measurements with correct timestemp:421
+
+218A0271 charge 1was filled
+
+Correct dates 430correct times 430
+
+Estimated step time is 5500
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0271 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0272
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 430correct times 430
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestemp:429
+
+218A0272 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0272 charge 2was filled
+
+Starting data extrapolation 
+
+Starting time correction for 218A0278
+
+Found 1recharges
+
+So, charges states are12
+
+Correct dates 429correct times 429
+
+Estimated step time is 6500
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found429
+
+Found measurements with correct timestemp:428
+
+218A0278 charge 1was filled
+
+Correct dates 623correct times 623
+
+Estimated step time is 5400
+ will be used step time 5400
+
+Charge:2 step time:5400, correct dates found623
+
+Found measurements with correct timestemp:622
+
+218A0278 charge 2was filled
+
+Starting correction of extrapolated dates 
+
+TT 218A0001 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0078 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Charge:2 step time:5400, correct dates found284
+
+Filling backward
+
+Found measurements with correct timestamp:283
+
+218A0078 charge 2was filled
+
+Nothing to correct in 3 charge, skipping
+
+TT 218A0092 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0152 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 218A0157 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0201 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0211 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 218A0215 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0225 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0232 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0241 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Charge:2 step time:5400, correct dates found551
+
+Filling backward
+
+Found measurements with correct timestamp:550
+
+218A0241 charge 2was filled
+
+TT 218A0252 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestamp:429
+
+218A0252 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0254 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0271 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found422
+
+Filling backward
+
+Found measurements with correct timestamp:421
+
+218A0271 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0272 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0278 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+Starting correct_time_ts_shift_matching of extrapolated dates 
+
+Starting correct_time_ts_shift_matching 
+
+Starting  correct_extrap_date inside correct_time_ts_shift_matching 
+
+TT 218A0001 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0078 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+Nothing to correct in 3 charge, skipping
+
+TT 218A0092 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0152 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 218A0157 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0201 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0211 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+TT 218A0215 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0225 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0232 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0241 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0252 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Charge:1 step time:5400, correct dates found430
+
+Found measurements with correct timestamp:429
+
+218A0252 charge 1was filled
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0254 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0271 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0272 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+TT 218A0278 fixing wrong corrections
+
+Found 0 bad extrapolation, fixing
+
+Removed incorrect time indexes
+
+Nothing to correct in 1 charge, skipping
+
+Nothing to correct in 2 charge, skipping
+
+Stopped correct_time_ts_shift_matching 
+
+Adding growth assesment 
+

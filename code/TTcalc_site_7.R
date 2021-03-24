@@ -64,11 +64,11 @@ TTBasicCalc = function(tdt, verboseFlag){
   fun_log(verboseFlag = verboseFlag, c("\n",
       "Basic calculation started, adding not algorithmic variables to table ",
       dim(tdt)[1],"x",dim(tdt)[2],"\n"))
-  #Clearing unclear
+  # Clearing unclear
   tdt[tdt == -Inf] = NA
   tdt[tdt ==  Inf] = NA
 
-  #Separate different types of devices
+  # Separate different types of devices
   tdt2 = tdt %>% filter(X3 == 46 | X3 == 49)
   tdt = tdt %>% filter(X3 == 45 )
   tdt_40 = tdt %>% filter(X3 == 40)
@@ -86,18 +86,21 @@ TTBasicCalc = function(tdt, verboseFlag){
     str_trunc(8,"left",  ellipsis = "")
   tdt$type = tdt$X3 %>% as.double
   fun_log(verboseFlag = verboseFlag, c("Voltage and proximity sensor \n"))
-  #Voltage and proximity sensor
+  
+  # Voltage and proximity sensor
   tdt$volt      = (1.1*131072 / tdt$X8)+0.65
-  tdt$dist = 4.6728*(tdt$X7*1.1/tdt$X8)^(-1.274)
+  tdt$dist = 0.000000008*(tdt$X7)^2 - 0.0016*(tdt$X7) + 89.032
+  tdt$dist4 = 0.000000008*(tdt$X7*4400/tdt$X8)^2 - 0.0016*(tdt$X7*4400/tdt$X8) + 89.032
+  tdt$dist3 =  4.6728*(tdt$X7*1.1/tdt$X8)^(-1.274)
   tdt$pulses     = tdt$X7
   tdt$Hz     = tdt$X20
-
-
-  #Climate
+  
+  # Climate
   tdt$rh    = tdt$X10
   tdt$tair  = tdt$X11/10
-  tdt$VPD   = 0.6108*exp((17.27*tdt$tair)/(tdt$tair+265.5))*(1 - tdt$rh/100)
-  #Accelerometer
+  tdt$VPD   = 0.6108*exp((17.27*tdt$tair)/(tdt$tair+273.15))*(1 - tdt$rh/100)
+  
+  # Accelerometer
   tdt$gx    = tdt$X12/4096
   tdt$gx2   = tdt$X13/16777216
   tdt$gy    = tdt$X14/4096
@@ -105,24 +108,25 @@ TTBasicCalc = function(tdt, verboseFlag){
   tdt$gz    = tdt$X16/4096
   tdt$gz2   = tdt$X17/16777216
   tdt$accel = (tdt$gx^2 + tdt$gy^2 + tdt$gz^2)^0.5
-  tdt$theta = atan(tdt$gx/(tdt$gy^2+tdt$gz^2)^0.5) /pi * 180
-  tdt$psi   = atan(tdt$gy/(tdt$gx^2+tdt$gz^2)^0.5) /pi * 180
-  tdt$phi   = atan(tdt$gz/(tdt$gy^2+tdt$gx^2)^0.5) /pi * 180
-  #Temoerature probes
+  tdt$theta = atan(tdt$gx/(tdt$gy^2+tdt$gz^2)^0.5)  /pi * 180
+  tdt$psi   = atan(tdt$gy/(tdt$gx^2+tdt$gz^2)^0.5)  /pi * 180
+  tdt$phi   = atan(((tdt$gy^2+tdt$gx^2)^0.5)/tdt$gz)/pi * 180
+  
+  # Temperature probes
   tdt$t1    = bandgap_t_correction(tdt$X5 /10, tdt$X8)
   tdt$nt1   = bandgap_t_correction(tdt$X6 /10, tdt$X8)
   tdt$t2    = bandgap_t_correction(tdt$X18/10, tdt$X8)
   tdt$nt2   = bandgap_t_correction(tdt$X19/10, tdt$X8)
   
-  mx= 119.639 - (0.0420 * (tdt$t1)) - (0.00761 * tdt$X20) 
-  y0=-209.9931
-  a=37.1602	
-  b=-2.2091	
-  c=0.0557	
-  d=-0.0005
-  
-  
-  tdt$moist = y0+a*mx+b*mx^2+c*mx^3+d*mx^4
+  # mx= 119.639 - (0.0420 * (tdt$t1)) - (0.00761 * tdt$X20) 
+  # y0=-209.9931
+  # a=37.1602	
+  # b=-2.2091	
+  # c=0.0557	
+  # d=-0.0005
+  # 
+  #Note:
+  tdt$Ecf = tdt$X20
   
   
   if (any(names(tdt)=="s")){
@@ -138,6 +142,8 @@ TTBasicCalc = function(tdt, verboseFlag){
   duplicated_data_row = tdt[,c("id","dist","rh","tair","VPD","gx","gx2","gy","gy2")] %>% duplicated %>% which
   fun_log(verboseFlag = verboseFlag, c("\n","Table had ",dim(tdt)[1]," rows, found ",
       duplicated_data_row %>% length, " rows to be removed.","\n" ))
+  
+  
   if(duplicated_data_row %>% length > 0){
     tdt = tdt[-duplicated_data_row,]
   }
@@ -202,8 +208,8 @@ TTBasicCalc = function(tdt, verboseFlag){
   tdt2 = tdt2 %>% mutate( PSSR = (b_V_810 / b_R_650))
   tdt2 = tdt2 %>% mutate( PSND = (b_V_810 - b_R_650)/(b_V_810 + b_R_650))
   tdt2 = tdt2 %>% mutate( PSRI = (b_S_680 - b_B_500)/b_U_760)
-  tdt2 = tdt2 %>% mutate( CARI= ((b_T_730-b_S_680)-0.2*(b_T_730-b_G_550)))
-  tdt2 = tdt2 %>% mutate( MCARI= ((b_T_730-b_S_680)-0.2*(b_T_730-b_G_550))*
+  tdt2 = tdt2 %>% mutate( CARI= ((b_T_730-b_S_680)- 0.2*(b_T_730-b_G_550)))
+  tdt2 = tdt2 %>% mutate( MCARI= ((b_T_730-b_S_680)- 0.2*(b_T_730-b_G_550))*
                             (b_T_730/b_S_680))
   tdt2 = tdt2 %>% mutate( MTCI = ((b_U_760 - b_T_730) /(b_T_730 - b_S_680)))
   tdt2 = tdt2 %>% mutate( CIg = ((b_W_860 - b_Y_570)/b_Y_570))
@@ -310,7 +316,7 @@ TTBasicCalc = function(tdt, verboseFlag){
 ischarged= function(data){
   if(length(data$volt)>2){
     charged = c(F,(data$volt[2:length(data$volt)] -
-                     data$volt[1:(length(data$volt)-1)]) > 0.5)
+                     data$volt[1:(length(data$volt)-1)]) > 0.05)
   } else {
     charged = F
   }
@@ -364,7 +370,7 @@ extrapolate_dates = function(data, timestep){
   return(data)
 }
 
-#Flagging continious correct server time========================================
+#Flagging continous correct server time========================================
 mark_continious_serv_time = function(data){
   #is.null(data) %>% print
   wst = which(!data$wrong_server)
@@ -417,6 +423,7 @@ extrapolate_tt_date = function(tt_one, verboseFlag){
 
       #temp_data = tt_one[tt_one$charge == ci,]
       temp_data = tt_one %>% filter(charge == ci)
+      
       temp_data$time[!temp_data$wrong_time] =
         temp_data$datetime[!temp_data$wrong_time]
 
@@ -435,7 +442,12 @@ extrapolate_tt_date = function(tt_one, verboseFlag){
         corr_unix_time_index = which(dt$serv_datetime[x] >
                                        dt$datetime[!dt$wrong_time])
         #Correct unix time which are less than current serv_time
-        corr_unix_time = dt$datetime[!dt$wrong_time[corr_unix_time_index]]
+        if(length(corr_unix_time_index) == length(datetime)) {
+          corr_unix_time = dt$datetime
+        } else {
+          corr_unix_time = dt$datetime[!dt$wrong_time[corr_unix_time_index]]  
+        }
+        
         # Indexes of corr_unix_time elemnts in whole datetime variable
         datetime_index = which(dt$datetime %in% corr_unix_time)
         # If any record numbers of measurement with correct unix time, which
@@ -444,12 +456,12 @@ extrapolate_tt_date = function(tt_one, verboseFlag){
         return (any(dt$rec_num[datetime_index] > dt$rec_num[x]))
       }
 
-      #if (any(!temp_data$wrong_server)){
-      #  cor_serv_records = which(!temp_data$wrong_server)
-      #  wrong_serv_records = cor_serv_records[cor_serv_records %>%
-      #                                          map_lgl(check_serv_time_too_high_according_it_record, dt = tt_one)]
-      #  temp_data$wrong_server[wrong_serv_records] = T
-      #}
+      if (any(!temp_data$wrong_server)){
+        cor_serv_records = which(!temp_data$wrong_server)
+        wrong_serv_records = cor_serv_records[cor_serv_records %>%
+                                                map_lgl(check_serv_time_too_high_according_it_record, dt = tt_one)]
+        temp_data$wrong_server[wrong_serv_records] = T
+      }
 
 
       if(length(temp_data$serv_datetime[temp_data$wrong_server == F])>0){
@@ -530,6 +542,8 @@ correct_extrap_date = function(tt_one, verboseFlag){
   fun_log(verboseFlag = verboseFlag, c("TT ", tt_one$id %>% unique, " fixing wrong corrections","\n"))
   #Check if date goes back in time with with growing row nunber
   ends = nrow(tt_one)
+  
+  if(ends <1) {return(tt_one)}
   bad_extrap_index =c(F,(tt_one$time[2:ends] - tt_one$time[1:(ends-1)])<0)
   # If tt data is very small in size previous step cana generate 
   # bad_extrap_index longer than the tt data itself, so NA produced
@@ -609,19 +623,15 @@ correct_time_ts_shift_matching = function(data, verboseFlag){
       abs.cor.max.lag <- lag[which.max(abscor)]
       return(c( abs.cor.max, abs.cor.max.lag))
     }
-    
+
     lag_table = data.frame()
     for(icharge in 1:6){
       for(iid in (data$id %>% unique)) {
         ttsi = data %>% filter(id == iid, charge == icharge)
-        
         if(nrow(ttsi)<64){ next()}
-        
-        
           for(jid in (data$id %>% unique)) {
             if(jid == iid){next()}
             ttsj = data %>% filter(id == jid, charge == icharge)
-            
             if(nrow(ttsj)<64){ next() }
             if(all(is.na(ttsj$time))) { next()}
             cor_time = which(!is.na(ttsj$time)) %>% length
@@ -630,14 +640,13 @@ correct_time_ts_shift_matching = function(data, verboseFlag){
             lag = abs.max.ccf(tsi,tsj)
             lag_row = data.frame(iid, jid, icharge, cor=lag[1], lag = lag[2], cor_time)
             lag_table = rbind(lag_table, lag_row)
-          
           }
-          
-        
         }
     }
-    
-    
+    if(nrow(lag_table)<1) {
+      fun_log(verboseFlag = verboseFlag, c("Very strange data, returning without lag correction \n"))
+      return(data)
+    }
     result_table = lag_table %>% group_by(iid, icharge) %>%  summarise(
       MaxCor = max(cor), jid = jid[which.max(cor)], lag = lag[which.max(cor)], 
       cor_time = cor_time[which.max(cor)]
@@ -662,6 +671,9 @@ correct_time_ts_shift_matching = function(data, verboseFlag){
        
      }
      fun_log(verboseFlag = verboseFlag, c("Starting  correct_extrap_date inside correct_time_ts_shift_matching \n"))
+     
+    print(datac %>% group_by(id) %>% summarise(n = n()))
+    
     dataec = datac  %>% group_by(id) %>%
       do(correct_extrap_date(., verboseFlag)) %>% as.data.frame
     
@@ -676,8 +688,63 @@ correct_time_ts_shift_matching = function(data, verboseFlag){
 #   facet_wrap(~id)
 }
 
+#Removing common row duplicates after basic calculation, comparing only "stable" variables
+remove_common_duplicates = function(data){
+  duplicate_rows_num = data[,c("volt","dist","pulses","Hz","rh","tair","VPD","gx","gx2","gy","gy2")] %>% 
+                        duplicated %>% which
+  if(length(duplicate_rows_num)>0){
+    unique_data = data[-duplicate_rows_num,]    
+  } else {
+    unique_data = data
+  }
+  return(unique_data)  
+}
 
 
+AddMoist = function(data){
+  
+  cornif_list = c("Larix sibirica","Picea abies","Pinus sylvestris","Pinus sibirica","Abies sibirica")
+  is_corniferous = data$Species %in% cornif_list
+  data = data %>% mutate(is_corniferous = Species %in% cornif_list) %>%
+    mutate(wood_moist = case_when(
+    is_corniferous ~ VWWCc,
+    !is_corniferous ~ VWWCb
+  ))
+}
+
+
+# Calculate growth data from distance
+AddGrowth = function(data){
+
+  data = data %>% group_by(year,month, id) %>%
+    mutate(mmean = mean(dist3, na.rm=T),
+           mmed=quantile(dist3,0.5,na.rm=T), 
+           mvar = sd(dist3,na.rm = T),
+           mq3 = quantile(dist3,0.9,na.rm=T),
+           mq1 = quantile(dist3,0.1,na.rm=T)) %>% 
+    ungroup() %>% group_by(year,week,id) %>%
+    mutate(wmean = mean(dist3, na.rm=T),wmed=quantile(dist3,0.5,na.rm=T), wvar = sd(dist3,na.rm = T)) %>% 
+    ungroup() %>% group_by(year,doy,id) %>%
+    mutate(dmean = mean(dist3, na.rm=T),dmed=quantile(dist3,0.5,na.rm=T), dvar = sd(dist3,na.rm = T))
+  
+  m = data %>% group_by(year, id) %>%  filter(hour<7 | hour >18 & dmed < wmed) %>% filter(Species !="TTR")%>%
+    filter(is.finite(dist3))%>%
+    do(model = lm(data =., slider::slide_dbl(dist3,~ quantile(.x,0.5,na.rm = T), .before=8, .after=8, .step=1) ~ datetime))
+
+  g = data %>% 
+    group_by(year,id) %>% 
+    nest %>% 
+    inner_join(m, by=c("id","year")) %>% 
+    mutate(preds = map2(model, data, predict)) %>% 
+    unnest(data,preds) %>% ungroup() %>%
+    select(id,datetime, preds) 
+
+  data = left_join(data,g, by=c("id","datetime"))
+
+  data = data %>%group_by(year, id) %>% mutate(growth = max(preds, na.rm=T)-preds)
+  return(data)
+  
+}
 
 #Calculating everything for one site - returns two tables=======================
 TTcalc_site = function(server,
@@ -718,26 +785,27 @@ TTcalc_site = function(server,
   tt_data = TTBasicCalc(temp_serv_dataset, verboseFlag)
   #tt_basic_data = lazy_dt(tt_data)
   #If there are duplicates - remove
-  
-  tt_data = tt_data[
-            -(tt_data[,c("volt","dist","pulses","Hz","rh","tair",
-               "VPD","gx","gx2","gy","gy2")] 
-              %>% duplicated 
-              %>% which), ]
+  fun_log(verboseFlag = verboseFlag, tt_data %>% nrow())
+  tt_data = remove_common_duplicates(tt_data)
+    
+  fun_log(verboseFlag = verboseFlag, c("\n"))
+  fun_log(verboseFlag = verboseFlag, tt_data %>% nrow())
   #Removing rows with corrupted id
   corrupted_id = unique(tt_data$id)[str_which(unique(tt_data$id),":")]
   if(corrupted_id %>% length() > 0){
     fun_log(verboseFlag = verboseFlag, c("Found corrupted id: ", corrupted_id, " removing \n"))
     tt_data = tt_data %>% filter(!(id %in% corrupted_id))
   }
-  
+  fun_log(verboseFlag = verboseFlag, c("Basic calc and duplicate removal finished \n"))
   #If data for one TT came from different clouds, we will try to give it some
   #order according to appearance on server since row order and record numbers
   #on different clouds will be different.
   tt_data = tt_data %>% group_by(id) %>%
-    arrange(serv_datetime) %>% as.data.frame
+    arrange(serv_datetime) %>% ungroup() %>% as.data.frame
+  fun_log(verboseFlag = verboseFlag, c("Sorted by server time \n"))
   #Adding flagging variable showing that this data was obtained from server
   tt_data$imported = F
+  fun_log(verboseFlag = verboseFlag, c("Import flag variable added \n"))
   # TT sends record to cloud one by one, and clouds do this in same way,
   # so on server records should appear in correct order.Between them could be
   # gaps, but we can detect them by battery charge discontinuties
@@ -968,6 +1036,7 @@ TTcalc_site = function(server,
   tt_data_e  = tt_data_ec %>% select(-c(years,doys,hours))
   tt_data_e$year = year(tt_data_e$time)
   tt_data_e$week = week(tt_data_e$time)
+  tt_data_e$month = month(tt_data_e$time)
   tt_data_e$doy = yday(tt_data_e$time)
   tt_data_e$hour = hour(tt_data_e$time)
   tt_data_e$min = minute(tt_data_e$time)
@@ -980,28 +1049,43 @@ TTcalc_site = function(server,
     mutate(maxTd = max(dist), na.rm = T) %>%
     mutate(meanTd = mean(dist), na.rm = T) %>%
     mutate(minTd = min(dist), na.rm = T) %>%
-    mutate(u = 119*(10^-3)*(dTm/dT - 1)^1.231, na.rm = T) #l m-2 s-1
-
-
+    mutate(u = 119*(10^-3)*(dTm/dT - 1)^1.231, na.rm = T) %>% #l m-2 s-1
+    mutate(u2 = 118.99*(10^-3)*(dTm/(nt2-t2-nt1+t1) - 1)^1.231, na.rm = T) %>% #l m-2 s-1)
+    ungroup()
+  tt_data_e = tt_data_e %>% group_by(id,year) %>%
+    mutate(ECf_Tb = -74.15*nt1+min(Ecf, na.rm=T)) %>%
+    mutate(ECf_Tc = -70.2*nt1+min(Ecf)) %>% 
+    mutate(dECfb = Ecf - ECf_Tb) %>%
+    mutate(dECfc = Ecf - ECf_Tc) %>%
+    mutate(dECfdb = (dECfb-min(dECfb, na.rm=T))/(max(dECfb,na.rm=T)-min(dECfb,na.rm=T))) %>%
+    mutate(dECfdc = (dECfc-min(dECfc, na.rm=T))/(max(dECfc,na.rm=T)-min(dECfc,na.rm=T))) %>%
+    mutate(VWWCb = -0.36*dECfdb + 0.45) %>%
+    mutate(VWWCc = case_when(
+      dECfdc > 0.95 ~ -1.3452*dECfdc + 1.422,
+      dECfdc <= 0.95 ~ -0.0555*dECfdc + 0.195
+    ))
+  tt_data_e = tt_data_e %>% ungroup() %>% group_by(id,charge) %>% 
+    mutate(dist2 = dist /volt*max(volt, na.rm = T) )
+    
   SITEdata = left_join(tt_data_e,SITE_list,by="id")
   SITEdata = SITEdata %>% mutate(diam = DBH / pi)
   SITEdata = SITEdata %>%
-    mutate(Flux = u*3600*(diam^1.8777)*0.755/10000, na.rm = T)
-  
+    mutate(Flux = u*3600*(diam^1.8777)*0.755/10000, na.rm = T) %>%
+    mutate(Flux2 = u2*3600*(diam^1.8777)*0.755/10000, na.rm = T)
+  fun_log(verboseFlag = verboseFlag, c("Adding growth assesment \n")) 
+  SITEdata = AddGrowth(SITEdata)
+  fun_log(verboseFlag = verboseFlag, c("Choosing correct wood moisture according to species\n"))
+  SITEdata = AddMoist(SITEdata)
   #SITEdata = BEFadd(SITEdata, verboseFlag)
   #Spectrometer calibration
   SITEdata  = TTR_add(SITEdata, verboseFlag)
-
-
+  
 
   if(verboseFlag =="mem"){
     return(list(tt_imported, SITEdata,message_log))
   }else {
     return(list(tt_imported, SITEdata))
   }
-  
-  
-  
 
 }
 
@@ -1166,13 +1250,13 @@ TTR_add = function(data, verboseFlag){
 
 
 #Exporting site data to excel===================================================
-export_all_to_excel = function(AllData) {
-  var_list = c("time","id","Species","d","VTA_score","rec_num","tair","rh","VPD",
-               "theta","psi","phi","gz2","nt1","NDVIc","EVIc","VARIc","PRIc","NDVI","EVI","VARI","PRI","Rr",
-               "Br","Gr","Flux", "TTair","TTrh","LAIb","LAInir")
+export_all_to_excel = function(var_list = c("time","id","Species","d","VTA_score","rec_num","tair","rh","VPD",
+                                            "theta","psi","phi","gz2","nt1","NDVIc","EVIc","VARIc","PRIc","NDVI","EVI","VARI","PRI","Rr",
+                                            "Br","Gr","Flux", "TTair","TTrh","LAIb","LAInir"), AllData) {
+  
   
   AllData = AllData %>% mutate(g2 = gz2+gy2+gx2) 
-  AllData = AllData %>% mutate(W = mean((46000-Hz)/(Hz+46000)*50, na.rm=T))
+  AllData = AllData %>% mutate(W = wood_moist)
   
   foreach (site = AllData$SiteIndex %>% unique()) %dopar% {
     list_of_datasets = list()

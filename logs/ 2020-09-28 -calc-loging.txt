@@ -1,0 +1,186 @@
+No sync today - downloading file 
+
+http://naturetalkers.altervista.org/C18A0229/C18A0229_cloud_rec.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 48953x2
+
+Sync was done today, no download 
+
+http://naturetalkers.altervista.org/C18A0229/C18A0229_cloud_rec.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 48953x2
+
+No sync today - downloading file 
+
+http://naturetalkers.altervista.org/C18A0229/C18A0229_cloud_rec.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 48952x21
+
+Voltage and proximity sensor 
+
+
+Table had 35804 rows, found 22669 rows to be removed.
+
+13135
+
+
+13135
+Basic calc and duplicate removal finished 
+
+Sorted by server time 
+
+Import flag variable added 
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 21880213
+
+Found 2recharges
+
+So, charges states are123
+
+Correct dates 611correct times 611
+
+Estimated step time is 4700
+ will be used step time 5400
+
+Charge:1 step time:5400, correct dates found611
+
+Found measurements with correct timestemp:610
+
+21880213 charge 1was filled
+
+No sync today - downloading file 
+
+http://naturetalkers.altervista.org/C18A0229/C18A0229_cloud_rec.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 48952x21
+
+Voltage and proximity sensor 
+
+
+Table had 35804 rows, found 22669 rows to be removed.
+
+13135
+
+
+13135
+Basic calc and duplicate removal finished 
+
+Sorted by server time 
+
+Import flag variable added 
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 21880213
+
+Found 2recharges
+
+So, charges states are123
+
+Correct dates 0correct times 0
+
+Charge:1 step time:3600, correct dates found0
+
+No sync today - downloading file 
+
+http://naturetalkers.altervista.org/C18A0229/C18A0229_cloud_rec.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 49357x21
+
+Voltage and proximity sensor 
+
+
+Table had 36013 rows, found 22705 rows to be removed.
+
+13308
+
+
+13308
+Basic calc and duplicate removal finished 
+
+Sorted by server time 
+
+Import flag variable added 
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 21880213
+
+Found 2recharges
+
+So, charges states are123
+
+Sync was done today, no download 
+
+http://naturetalkers.altervista.org/C18A0229/C18A0229_cloud_rec.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 26687x21
+
+Voltage and proximity sensor 
+
+
+Table had 13343 rows, found 35 rows to be removed.
+
+13308
+
+
+13308
+Basic calc and duplicate removal finished 
+
+Sorted by server time 
+
+Import flag variable added 
+
+Checking if there are some back up data data? 
+
+Nope, nothing to import 
+
+Starting extrapolation of dates 
+
+Starting data extrapolation 
+
+Starting time correction for 21880213
+
+Found 2recharges
+
+So, charges states are123
+
+No sync today - downloading file 
+
+http://naturetalkers.altervista.org/C18A0031/ttcloud.txtdata read.
+
+No sync today - downloading file 
+
+http://naturetalkers.altervista.org/C18A0025/ttcloud.txtdata read.
+
+
+Basic calculation started, adding not algorithmic variables to table 750087x21
+
+Voltage and proximity sensor 
+
